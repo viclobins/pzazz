@@ -1,0 +1,107 @@
+<style type="text/css">/* STANDARD */
+	#jls-contactfrm { color: #6b6b6b;}
+	
+
+	#jls-contactfrm h1.blue {height: 20px;
+	background-color:[ekm:colour_2][/ekm:colour_2];
+	color:#fff;
+	padding: 5px 0 0 5px;
+	margin-top: 0;
+	font-size:12px;}
+	
+	#jls-contactfrm #phoneemail {margin: 10px 0; padding: 0;}
+	#jls-contactfrm #telephone-no {float: left; width: 200px; margin: 0 50px 0 5px; padding: 5px 0 5px 0; font-size: 12px;}
+	#jls-contactfrm #telephone-no .number {font-size: 16px; color: #666; margin: 0 0 5px;}
+	#jls-contactfrm #telephone-no .openingtimes {font-size: 10px;}
+	#jls-contactfrm #telephone-no p {margin: 0;}
+	
+	#jls-contactfrm #address {float: left; width: 300px; margin: 0 0 0 10px; padding: 5px 0 5px 0}
+	#jls-contactfrm #address p {margin: 0;}
+	#jls-contactfrm #address .anAddress {width: 220px; float: left; font-size:12px;}
+	#jls-contactfrm #address h3 {margin: 0; padding: 0; font-size: 16px; color: #666;}
+	
+	#contactform {}
+	#contactform form {display: block; padding: 10px;}
+	#contactform #frmleft {float: left;}
+	#contactform #frmright {float: right;}
+	#contactform .frm-row {margin: 0 0 5px;}
+	#contactform .frm-row label {display: block; font-weight: bold; font-size: 12px; padding: 0 0 3px;}
+	#contactform .frm-row input:focus {background: #f5f5f5;}
+	#contactform .frm-row .txt {padding: 7px; font-size: 12px; width:220px; height: 12px; border: solid 1px #e0e0e0; box-shadow: 0 0 5px #efefef;}
+	#contactform .frm-row .txtarea {width: 340px; height: 90px; padding: 5px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; border: solid 1px #e0e0e0; box-shadow: 0 0 5px #efefef;}
+	#contactform .frm-row .bt { 
+	background: none repeat scroll 0 0 [ekm:colour_3][/ekm:colour_3];
+    border: 1px solid [ekm:colour_3][/ekm:colour_3];
+    color: #fff;
+    cursor: pointer;
+    float: left;
+    font-size: 12px;
+    padding: 5px 5px;
+    text-decoration: none;}
+#contactform .frm-row .bt:hover {background: none repeat scroll 0 0 [ekm:colour_4][/ekm:colour_4];
+border: 1px solid [ekm:colour_4][/ekm:colour_4]}
+.blank{clear:both;}
+</style>
+<div id="jls-contactfrm">
+<h1 class="blue">Contact Us</h1>
+<!-- PHONE + EMAIL -->
+
+<div id="phoneemail"><span style="font-family:verdana,geneva,sans-serif;"><!-- ADRESS -->
+<div class="cf" id="address">
+<div class="anAddress">P-zazz<br />
+The Barn<br />
+1 Watford House Lane<br />
+Watford<br />
+Herts<br />
+WD17 1BJ</div>
+</div>
+</span><!-- END ADDRESS --><!-- NUMBER -->
+
+<div id="telephone-no">
+<p class="number"><span style="font-family:verdana,geneva,sans-serif;"><span style="font-size: 12px;">Booking Hotline: 01923 221527<br />
+Telephone: 0333 200 3334</span><br />
+<span style="font-size: 12px;">Office Mobile: 07723 704551</span><br />
+<span style="font-size: 12px;">Email: </span><span style="font-size:10px;"><a href="mailto:friendlyteam@p-zazz.co.uk?subject=Message%20from%20Website">friendlyteam@p-zazz.co.uk</a></span><br />
+<br />
+<span style="font-size: 12px;">Term-time office opening hours: 9.00am - 5.00pm </span></span></p>
+<!--<p>
+				Fax:</p>
+			<p class="number">
+				0844 858 8580</p>--></div>
+<!-- END NUMBER -->
+
+<div class="blank"></div>
+</div>
+<!-- END PHONE + EMAIL --><!-- CONTACT FORM -->
+
+<div id="contactform">
+<h1 class="blue">Send Us An Email...</h1>
+
+<form action="index.asp?function=FORMMAIL" method="post">
+<div id="frmleft">
+<div class="frm-row" id="frm-row-name"><label for="name">Your Name:</label><input class="txt" kl_virtual_keyboard_secure_input="on" name="name" type="text" />
+<div class="blank"></div>
+</div>
+
+<div class="frm-row" id="frm-row-telephone"><label for="tel">Telephone Number:</label><input class="txt" kl_virtual_keyboard_secure_input="on" name="tel" type="text" />
+<div class="blank"></div>
+</div>
+
+<div class="frm-row" id="frm-row-email"><label for="email">Email Address:</label><input class="txt" kl_virtual_keyboard_secure_input="on" name="email" type="text" />
+<div class="blank"></div>
+</div>
+</div>
+
+<div class="blank"></div>
+
+<div class="frm-row" id="frm-row-message"><label for="message">Message:</label><textarea class="txtarea" name="message"></textarea>
+
+<div class="blank"></div>
+</div>
+
+<div class="frm-row" id="frm-row-submit"><input class="bt" type="submit" value="send email" />
+<div class="blank"></div>
+</div>
+<!-- HIDDEN --><input name="fieldorder" type="hidden" value="[name],[email],[tel],[message]" /> <input name="requiredfields" type="hidden" value="[name],[email],[message]" /> <input name="subject" type="hidden" value="An E-mail From Your Shop Visitor" /></form>
+</div>
+<!-- END CONTACT FORM --></div>

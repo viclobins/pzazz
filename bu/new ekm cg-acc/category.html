@@ -1,0 +1,181 @@
+<style>
+@media only screen and (max-width: 800px) {
+	.responsive .content-wrapper { padding:0 10px; overflow:hidden; }
+	.responsive .category-product .sh-img-div .featured-product-image img {
+		width: 100%;
+    	height: 100%;
+	}
+}
+.content-wrapper {
+	padding:0 50px;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.ekm-sortby-form {float: right; margin: -5px 10px 10px 0;}
+.ekm-sortby-form label {margin: 0 5px 0 0;}
+#category-products {clear: both;}
+
+.left-content-area { background:none; }
+</style>
+
+<div class="breadcrumbs">
+  <div class="breadcrumb-text">[ekm:location][/ekm:location]</div>
+  <div class="back">[ekm:back][/ekm:back]</div>
+</div><!--breadcrumb-->
+
+<div class="clearfix"></div>
+
+<div class="left-content-area cf">
+  <h1>[ekm:categorypagename]categorypageid='[ekm:categoryid][/ekm:categoryid]';[/ekm:categorypagename]</h1>
+  <div class="category-desc">[ekm:incategorydescription][/ekm:incategorydescription]</div>
+  [ekm:showdata]
+    tag_hide_toggle='yes';
+    data='categories';
+    location='auto';
+    cols='3';
+    rows='99';
+    page_navigation='yes';
+    orderby='orderlocation, name';
+    editbuttons='YES';
+    counterreset='4';
+    image_ratio='118';
+    image_width='auto';
+    image_height='auto';
+    font_formatting='NO';
+    ' Output Format
+    output_start='<div class="subcategory-container cf">';
+    output_row_start='<div class="category-row cf">';
+    output_column_start='';
+    output_item='
+        <div class="subcategory-product c-[counter]">
+          <div class="sh-img-div">{image}<div class="subcategory-image">[image]</div>{/image}</div>
+          {name}<div class="subcategory-name">[name]</div>{/name}
+        </div><!-- CLOSE subcategory-product -->';
+    output_column_end='';
+    output_row_end='</div><!--product row-->';
+    output_end='</div><!--product div-->';
+  [/ekm:showdata] 
+      
+  [ekm:sort_by]requestend_callback='doSameHeight'; target_tag_id='category-products'; [/ekm:sort_by]
+
+  [ekm:showdata]
+    tag_hide_toggle='yes';
+    id='category-products';
+    data='product';
+    location='auto';
+    cols='1';
+    rows='99';
+    page_navigation='yes';
+    orderby='orderlocation, name';
+    editbuttons='YES';
+    counterreset='3';
+    image_ratio='218';
+    image_width='auto';
+    image_height='auto';
+    font_formatting='NO';
+    ' Output Format
+    output_start='<div class="featured-product-container">';
+    output_row_start='<div class="product-row cf">';
+    output_column_start='';
+    output_item='
+      <div class="category-product c-[counter]">
+        <div class="sh-img-div">{image}<div class="featured-product-image">[image]</div>{/image}</div>
+        <div class="details">
+          {name}<div class="featured-product-name">[name]</div>{/name}
+          <div class="sh-sd-div">{shortdescription}<div class="featured-product-desc">[shortdescription]</div>{/shortdescription}</div>
+          {price}
+            <div class="featured-product-price">
+              [price]
+              {rrp}<span class="featured-product-rrp">[rrp]</span>{/rrp}
+            </div>
+          {/price}
+          {add_to_cart_link}<div class="add-to-cart">[add_to_cart_link]</div><!---ADD_CART_BG-->{/add_to_cart_link}
+        </div><!--CLOSE DETAILS -->
+      </div><!--PRODUCT_CONTAINER-->
+    ';
+    output_column_end='';
+    output_row_end='</div><!--CLOSE ALL PRODUCTS -->';
+    output_end='</div><!--CLOSE FEATURED PRODUCT CONTAINER -->';
+  [/ekm:showdata]
+
+ </div><!--left-content-area-->
+
+ <div class="right-sidebar cf">
+
+  [ekm:filter_by]
+    requestend_callback='doSameHeight';
+    target_tag_id='category-products';
+    output_start='<div class="right-sidebar-individual cf"><div class="product-filter"><div class="filter-heading">Refine</div>';
+    output_end='</div></div> <!-- .product-filter -->';
+  [/ekm:filter_by]
+
+  
+    [ekm:showdata]
+      tag_hide_toggle='yes';
+      font_formatting='no';
+      ' Data to Show
+      data='categories';
+      location='0';
+      ' Basic Layout & Navigation
+      cols='1';
+      rows='100';
+      page_navigation='auto';
+      ' Advanced Data Manipulation
+      orderby='orderlocation, name';
+      skiprecords='0';
+      excludelist='';
+      includelist='';
+      ' Navigation Options when logged in
+      editbuttons='YES';
+      counterreset='';
+      ' Output Format
+      header_title_text='Book Your Child's Place Here';
+      output_start='
+      <div class="right-sidebar-individual cf">
+      <div class="right-sidebar-heading">[header_title_text]</div>
+      <div class="cate-menu"><ul>';
+      output_row_start='';
+      output_column_start='';
+      output_item='<li>[name]
+
+        [ekm:nested_if]
+          iftype="EQUALS";
+          ifvalue="[ekm:nested_categoryid]depth="0";[/ekm:nested_categoryid]";
+          ifvalue2="[id]";
+          ifthen="
+
+              [ekm:nested_showdata]
+                tag_hide_toggle="yes";
+                data="categories";
+                location="[id]";
+                cols="1";
+                rows="500";
+                page_navigation="no";
+                orderby="orderlocation, name";
+                font_formatting="No";
+                output_start="<ul>";
+                output_row_start="";
+                output_column_start="";
+                output_item="<li>[nested_name]</li>";
+                output_column_end="";
+                output_row_end="";
+                output_end="</ul>";
+                element_replace="null";
+              [/ekm:nested_showdata]";
+
+          ifelse="";
+        [/ekm:nested_if]
+
+       </li>';
+      output_column_end='';
+      output_row_end='';
+      output_end='</ul></div><!-- CLOSE CATEGORY MENU -->
+  </div><!--right-sidebar-->';
+      ' Element Replace
+      element_replace='null';
+    [/ekm:showdata]
+
+</div><!--right-sidebar-->
+
+<div class="clearfix"></div>

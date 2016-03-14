@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'single_sleeveregular';
+    src: url('http://www.creative-genesis.com/pzazz/fonts/single_sleeve-webfont.eot');
+    src: url('http://www.creative-genesis.com/pzazz/fonts/single_sleeve-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://www.creative-genesis.com/pzazz/fonts/single_sleeve-webfont.woff2') format('woff2'),
+         url('http://www.creative-genesis.com/pzazz/fonts/single_sleeve-webfont.woff') format('woff'),
+         url('http://www.creative-genesis.com/pzazz/fonts/single_sleeve-webfont.ttf') format('truetype'),
+         url('http://www.creative-genesis.com/pzazz/fonts/single_sleeve-webfont.svg#single_sleeveregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

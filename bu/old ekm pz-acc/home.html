@@ -1,0 +1,373 @@
+<style type="text/css">
+/*new-slider*/
+.slider {
+    height: 350px;
+    margin-bottom: 35px;
+    margin-left: 2px;
+    position: relative;
+    width: 580px;
+}
+#mainBannerOuter{ height:257px}
+#mainBannerInner{ position:relative; overflow:hidden; height:350px!important; width:580px!important;}
+
+/*shift edit buttons so images dont hide them*/
+#mainBannerInner div.ekm-edit-button-wrapper {
+    position: absolute !important;
+    bottom: 0 !important;
+    }
+#mainBannerControls {
+    border-radius: 20px 20px 20px 20px;
+    bottom: -92px;
+    float: left;
+    left: 76%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    position: absolute;
+    width: 140px;
+    z-index: 100;
+    }
+#mainBannerControls ul{  margin:0px; padding:0px;}
+#mainBannerControls ul li{ float:left; list-style:none;}
+#mainBannerControls ul li a{ display:block; width:10px; height:10px; margin:0 4px; line-height:16px; text-indent:20px; overflow:hidden; cursor:pointer;}
+.select-banner-prev {
+    /*background:url(/ekmps/designs/assets/master/1129/images/arrows.png) 0 0 no-repeat;*/
+    overflow:hidden;
+    height: 62px !important;
+    left: -889px;
+    position: relative;
+    text-indent: -100px !important;
+    top: -234px;
+    width: 30px !important;
+    display:none;
+    } 
+.select-banner-next {
+    /*background:url(/ekmps/designs/assets/master/1129/images/arrows.png) -30px 0 no-repeat;*/
+    overflow:hidden;
+    height: 62px !important;
+    left: 109px;
+    position: relative;
+    text-indent: -100px !important;
+    top: -243px;
+    width: 30px !important;
+    display:none;
+    } 
+.select-banner-next:hover, .select-banner-prev:hover {opacity:0.7}
+a.select-banner-goto { background:#111; border-radius: 30px;}
+a.select-banner-goto:hover {background:#999;}
+a.select-banner-goto.current, a.select-banner-goto.current:hover { background:/*#666*/[ekm:colour_8][/ekm:colour_8]; height:14px; width:14px;}
+.select-banner-slide { position:absolute; left:0; top:0;}
+.slideShowFrame.not-first{ height:0;}
+
+/*categories+prods*/
+.categories-container, .products-container, #specials-header, #categories-header {float:left; clear:both;}
+.products-container {margin-bottom:30px;}
+.item {float: left; text-align: center; width: 188px; margin:0 4px 20px 4px}
+.item-image {border:1px solid #e0e0e0; margin-bottom:10px; background:#fff; padding: 6px 0; position:relative;}
+.item-image img {display:block; margin:auto;}
+.cover{
+    background: none repeat scroll 0 0 #FFFFFF;
+    height: 40px;
+    left: 143px;
+    position: absolute;
+    top: 121px;
+    width: 29px;
+    border-radius: 14px; 
+    -moz-border-radius: 14px; 
+    -webkit-border-radius: 14px; 
+}
+.item-image:hover {border:1px solid #999; cursor:pointer; -moz-transition: all 0.2s ease-in-out 0s;}
+.item-name, .cat-item-name {
+    font-weight: bold;
+    text-align: center;
+    width: 189px;
+    margin: 10px 0;
+}
+.cat-item-name {width:100%; margin-bottom: 20px;}
+.item-name a, .cat-item-name a {text-decoration:none;}
+.item-price {width:100%; text-align:center; font-weight:bold; color:#333; margin: 10px 0;}
+.i-5 {margin-right:0px!important}
+.row {clear:both; margin: 10px 0;}
+
+/*header*/
+.hp-header {
+    border-bottom: 1px dotted #CCCCCC;
+    color: #666666;
+    font-family: "century gothic",Arial;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 3px;
+    padding: 5px;
+    text-transform: uppercase;
+    }
+
+</style>
+
+
+[ekm:element]
+    element_reference='site-title';
+    output_start='<div class="hp-header">';
+    output_end='</div>';
+    element_name_default='site-title';
+    product='ekmpowershop';
+    output_default='FRAMED PRINTS';
+[/ekm:element]
+
+
+<div class="slider">
+<div id="mainBannerControls"></div> 
+        <div id="mainBannerOuter">
+            <div id="mainBannerInner">
+  
+                [ekm:element]
+                    element_reference='promo-banner-1-586';
+                    output_start='<div class="slideShowFrame">';
+                    output_end='</div>';
+                    element_name_default='';
+                    product='ekmsitebuilder, ekmpowershop';
+                    output_default='<img src="/ekmps/designs/assets/master/1129/images/promo-1.jpg" width="586" height="349">';
+                [/ekm:element]
+
+                [ekm:element]
+                    element_reference='promo-banner-2-586';
+                    output_start='<div class="slideShowFrame not-first">';
+                    output_end='</div>';
+                    element_name_default='';
+                    product='ekmsitebuilder, ekmpowershop';
+                    output_default='<img src="/ekmps/designs/assets/master/1129/images/promo-2.jpg" width="586" height="349">';
+                [/ekm:element]
+                
+                [ekm:element]
+                    element_reference='promo-banner-3-586';
+                    output_start='<div class="slideShowFrame not-first">';
+                    output_end='</div>';
+                    element_name_default='';
+                    product='ekmsitebuilder, ekmpowershop';
+                    output_default='<img src="/ekmps/designs/assets/master/1129/images/promo-3.jpg" width="586" height="349">';
+                [/ekm:element]
+                
+                [ekm:element]
+                    element_reference='promo-banner-4-586';
+                    output_start='<div class="slideShowFrame not-first">';
+                    output_end='</div>';
+                    element_name_default='';
+                    product='ekmsitebuilder, ekmpowershop';
+                    output_default='<img src="/ekmps/designs/assets/master/1129/images/promo-4.jpg" width="586" height="349">';
+                [/ekm:element]
+
+                [ekm:element]
+                    element_reference='promo-banner-5-586';
+                    output_start='<div class="slideShowFrame not-first">';
+                    output_end='</div>';
+                    element_name_default='';
+                    product='ekmsitebuilder, ekmpowershop';
+                    output_default='<img src="/ekmps/designs/assets/master/1129/images/promo-5.jpg" width="586" height="349">';
+                [/ekm:element]
+            </div>
+        </div>
+</div>
+
+
+
+[ekm:element]
+    element_reference='60000_welcome-header';
+    output_start='<div class="hp-header">';
+    output_end='</div>';
+    element_name_default='';
+    product='ekmpowershop';
+    output_default='Welcome to Ecommerced';
+[/ekm:element]
+
+
+
+[ekm:element]
+    element_reference='60000_welcome-header';
+
+    output_start='<div class="hp-header">'; 
+    element_name_default='';
+    product='ekmsitebuilder';
+    output_default='Welcome to Our Website ';
+    output_end='</div>';
+[/ekm:element]
+
+
+
+[ekm:element]
+    element_reference='welcome-area';
+    output_start='';
+    element_name_default='';
+    product='ekmsitebuilder, ekmpowershop';
+    output_default='<p style="text-align: left;">Your custom text here and maybe some custom <a href="index.asp">links</a>. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>';
+    output_end='';
+[/ekm:element]
+
+
+<div class="products-container">
+    [ekm:showdata]          
+        data='products';
+        location='auto';
+        cols='3';
+        rows='100';
+        page_navigation='auto';
+        orderby='orderlocation, name';o
+        editbuttons='YES';
+        counterreset='3';
+        image_ratio='150';
+        image_width='auto';
+        image_height='auto';
+        font_formatting='NO';
+        header_title_text='Products';
+        output_start='
+        {header_title_text}
+            <div class="hp-header">[header_title_text]</div>
+        {/header_title_text}
+
+        {!header_title_text}
+            [ekm:nested_element]
+                element_reference="Products-Title";
+                output_start="<div class="hp-header">"; 
+                element_name_default="";
+                product="ekmpowershop";
+                output_default="Products";
+                output_end="</div>";
+            [/ekm:nested_element]
+        {/!header_title_text}
+        ';
+        output_row_start='<div class="row cf">';
+        output_column_start='';
+        output_item='
+            <div class="item i-[counter]">
+                <div class="sh-img-div">{image}<div class="item-image">[image]</div>{/image}</div>
+                {name}<div class="cat-item-name">[name]</div>{/name}
+                {price}<div class="item-price">[price]</div>{/price}
+                <div class="sh-sd-div">{shortdescription}<div class="short-description">[shortdescription]</div>{/shortdescription}</div>
+            </div><!-- .item  -->';
+        output_column_end='';
+        output_row_end='</div>';
+        output_end='';      
+    [/ekm:showdata]
+</div><!--.products container-->
+
+<div class="products-container">
+    [ekm:showdata]          
+        data='specialoffers';
+        location='auto';
+        cols='3';
+        rows='100';
+        page_navigation='auto';
+        orderby='orderlocation, name';
+        editbuttons='YES';
+        counterreset='3';
+        image_ratio='150';
+        image_width='auto';
+        image_height='auto';
+        font_formatting='NO';
+        output_start='';
+        output_row_start='<div class="row cf">';
+        output_column_start='';
+        output_item='
+            <div class="item i-[counter]">
+                <div class="sh-img-div">{image}<div class="item-image">[image]</div>{/image}</div>
+                {name}<div class="item-name">[name]</div>{/name}
+                {price}<div class="item-price">[price]</div>{/price}
+                <div class="sh-sd-div">{shortdescription}<div class="short-description">[shortdescription]</div>{/shortdescription}</div>
+            </div><!-- .item  -->';
+        output_column_end='';
+        output_row_end='</div>';
+        output_end='';      
+    [/ekm:showdata]
+</div><!--.special offers container-->
+ 
+<script type="text/javascript">
+jQuery.fn.sBanner = function(options){
+    if (typeof options == 'undefined') options = {};
+    $j.extend({
+        speed: 1000,
+        duration: 400
+    }, options);
+    return $j(this).each(function(){
+        var element = $j(this);
+        var slides = element.children();
+        slides.addClass('select-banner-slide');
+        slides.hide().eq(0).show();
+        var slideWidth = slides.width();
+        var slideHeight = slides.height();
+        element.width(slideWidth);
+        element.height(slideHeight);
+        var timer;
+        var animating = false;
+        var currentIndex = 0;
+        var goto = function(index){
+            if (index == currentIndex) return;
+            if (animating) return;
+            animating = true;
+            var currentSlide = slides.eq(currentIndex);
+            var nextSlide = slides.eq(index);
+            var start = (currentIndex < index)? slideWidth : -slideWidth;
+            nextSlide.css({left: start}).show();
+            currentSlide.animate({left: -start}, {duration: options.duration, complete: function(){
+                currentSlide.hide();
+            }});
+            nextSlide.animate({left: 0}, {duration: options.duration, complete: function(){
+                animating = false;
+                currentIndex = index;
+            }});
+            if(options.controls) $j(options.controls).find('a.select-banner-goto').removeClass('current').eq(index).addClass('current');
+        };
+        var next = function(event){
+            if (event && event.preventDefault) event.preventDefault();
+            var n = currentIndex + 1;
+            if (n >= slides.length) n = 0;
+            goto(n);
+        };
+        var prev = function(event){
+            event.preventDefault();
+            var n = currentIndex - 1;
+            if (n < 0) n = slides.length - 1;
+            goto(n);
+        };
+        if(options.controls){
+            var controlsEl = $j(options.controls);
+            var controls = $j('<ul/>');
+            var control = $j('<li><a class="select-banner-prev">Previous</a></li>');
+            control.bind('click', prev);
+            controls.append(control);
+            slides.each(function(index){
+                var control = $j('<li><a class="select-banner-goto">' + index + '</a></li>');
+                control.bind('click', function(event){
+                    event.preventDefault();
+                    goto(index);
+                });
+                controls.append(control);
+            });
+            control = $j('<li><a class="select-banner-next">Next</a></li>');
+            control.bind('click', next);
+            controls.append(control);
+            controlsEl.append(controls);
+            controlsEl.find('a.select-banner-goto').eq(0).addClass('current');
+        }
+        var mouseIsOver = false;
+        var pauseEls = (options.controls)? element.add($j(options.controls)) : element;
+        pauseEls.bind({
+            'mouseenter': function(event){
+                if (mouseIsOver) return;
+                mouseIsOver = true;
+                clearInterval(timer);
+            },
+            'mouseleave': function(event){
+                if (!mouseIsOver) return;
+                mouseIsOver = false;
+                timer = setInterval(next, options.speed);
+            }
+        });
+        timer = setInterval(next, options.speed);
+    });
+}
+
+$j(window).bind('load', function(){
+    $j('.slideShowFrame.not-first').removeClass('not-first');
+    $j('#mainBannerInner').sBanner({
+        speed: 5000,
+        controls: '#mainBannerControls'
+    });
+});
+</script> 

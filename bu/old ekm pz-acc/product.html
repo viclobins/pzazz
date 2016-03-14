@@ -1,0 +1,150 @@
+<STYLE>	
+		<!--		
+		.product_infoBox {
+		  background: [ekm:colour_product_2];
+		}
+		
+		.product_infoBoxContents {
+		  background: [ekm:colour_product_13];
+		}
+		
+		.product_infoBoxContents_main {
+		  background: [ekm:colour_product_13];
+		}
+		
+		.product_infoBoxContents_subcat {
+		  background: [ekm:colour_product_13];
+		}
+		
+		.product_infoBoxNotice {
+		  background: #FF8E90;
+		}
+		
+		.product_infoBoxNoticeContents {
+		  background: #FFE6E6;
+		}
+		
+		TD.product_infoBoxHeading {
+		  font-weight: bold;
+		  background: [ekm:colour_product_12];
+		  color: [ekm:colour_product_1];
+		}
+		
+		
+		
+		TD.product_pageHeading, DIV.product_pageHeading {
+		  font-weight: bold;
+		  color: #9a9a9a;
+		}
+		
+		TD.product_main, P.product_main {
+		  line-height: 1.5;
+		}
+		
+		-->
+</STYLE>
+
+[ekm:productstart][/ekm:productstart]
+
+     <table border="0" width="100%" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><table border="0" width="100%" cellspacing="0" cellpadding="0">
+          <tr>
+            <td class="pageHeading" valign="top">[ekm:productname]font_formatting='YES';[/ekm:productname]<br><span class="product_smallText">[ekm:productcode][/ekm:productcode]</span></td>
+            <td class="pageHeading" align="right" valign="top">
+                [ekm:productrrp]
+                    line='no';
+                    rrp_colour='auto';
+                    rrp_font='auto';
+                    rrp_size='2';
+                    rrp_text_layout='auto';
+                    rrp_symbol_layout='auto';
+                [/ekm:productrrp]
+                &nbsp;
+                [ekm:productprice]font_formatting='NO';[/ekm:productprice]
+                <br>
+                [ekm:loyaltypoints]output_item='<small style="font-size: 11px;">Earn <strong>[loyaltypoints]</strong> Points with this purchase</small>';[/ekm:loyaltypoints]
+            </td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td><img src="/ekmps/designs/assets/product/299/images/pixel_trans.gif" border="0" alt="" width="100%" height="10"></td>
+      </tr>
+      <tr>
+        <td class="product_main">
+          <table border="0" cellspacing="0" cellpadding="2" align="right">
+            <tr>
+              <td align="center" class="product_smallText">
+					[ekm:productimage][/ekm:productimage]<br>Click to enlarge
+              </td>
+            </tr>
+          </table>
+		  	    
+		  [ekm:productdescription]
+		  	font_formatting='YES';
+		  [/ekm:productdescription] <br><br>
+      
+      [ekm:social]name='product page';[/ekm:social]  
+		  <BR>
+		  
+		  <DIV CLASS="product_options">
+		  [ekm:productoptions][/ekm:productoptions]
+		  </DIV>
+
+      [ekm:productattributes]
+        productid='';
+        output_start='<div class="attributes">';
+        output_item='
+        <div class="attribute">
+          <strong>[name]:</strong><!-- attribute-name --> [value]
+        </div><!-- attribute -->
+        ';
+        output_end='</div><!-- attributes -->';
+      [/ekm:productattributes]
+        </td>
+      </tr>
+      <tr>
+        <td><img src="/ekmps/designs/assets/product/299/images/pixel_trans.gif" border="0" alt="" width="100%" height="20"></td>
+      </tr>
+      
+      <tr>
+        <td><table border="0" width="100%" cellspacing="1" cellpadding="2" class="product_infoBox">
+          <tr class="product_infoBoxContents">
+            <td><table border="0" width="100%" cellspacing="0" cellpadding="2">
+              <tr>
+                <td width="10"><img src="/ekmps/designs/assets/product/299/images/pixel_trans.gif" border="0" alt="" width="10" height="1"></td>
+                <td class="main"></td>
+                <td class="main" align="right">[ekm:addtocart][/ekm:addtocart]
+                
+                <br>
+                            [ekm:backinstock][/ekm:backinstock]
+                
+                </td>
+                <td width="10"><img src="/ekmps/designs/assets/product/299/images/pixel_trans.gif" border="0" alt="" width="10" height="1"></td>
+              </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td><img src="/ekmps/designs/assets/product/299/images/pixel_trans.gif" border="0" alt="" width="100%" height="10"></td>
+      </tr>
+	  
+	  <tr>
+        <td class="main">[ekm:customerreviews][/ekm:customerreviews]</td>
+      </tr>
+      <tr>
+        <td class="main">[ekm:productrelated]title='auto';layout='auto';[/ekm:productrelated]</td>
+      </tr>
+      <tr>
+        <td><img src="/ekmps/designs/assets/product/299/images/pixel_trans.gif" border="0" alt="" width="100%" height="10"></td>
+      </tr>
+	  
+      <tr>
+        <td>
+        </td>
+      </tr>
+    </table>
+
+[ekm:productend][/ekm:productend]

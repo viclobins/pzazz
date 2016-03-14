@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>[ekm:pagetitle][/ekm:pagetitle]</title>
+
+<META NAME="description" CONTENT="[ekm:metadescription][/ekm:metadescription]">
+<META NAME="keywords" CONTENT="[ekm:metakeywords][/ekm:metakeywords]">
+
+[ekm:favicon][/ekm:favicon]
+
+<style>
+
+body {font:11px "Trebuchet MS", Tahoma, Helvetica, sans-serif; color:#999; background:/*#FFF*/[ekm:colour_1][/ekm:colour_1]; margin:0; padding:0}
+
+/*defaults*/
+a {color:#666; -moz-transition: all 0.2s ease-in-out 0s;  -webkit-transition: all 0.2s ease-in-out 0s;}
+a:hover {color:#000;}
+a img {border:0px;}
+a:active, visited {outline:none;}
+form {padding:0px; margin:0px;}
+.clear {clear:both;}
+/* used instead of overflow hidden */
+.cf:before, .cf:after {content:" "; display: table;}
+.cf:after {clear: both;}
+.cf {zoom: 1;}
+#container {width:980px; min-height:600px; margin:0px auto;}
+
+/*rounded corners*/
+#mini-cart, #nav-bar, #footer, .nivoSlider img, #categories-header, #specials-header, #view-cart a, #search-button, #search-box, #cart-inner, #currency-cont img, #sub-footer, #add-to-cart, #add-to-cart input, input#ekmResponseSignupButton, input#customer-login-button, input#ekmResponseEmailAddress, .customer-login-box, .element, #content {
+    border-radius:0px;/*increase this value to make the site have rounded corners*/
+    }
+
+/*ekm colour - bar backgrounds*/
+#nav-bar, #footer, #categories-header, #specials-header, .element-header {
+    background-color:/*#BBC3D3*/[ekm:colour_2][/ekm:colour_2];
+    }
+
+/*ekm colour buttons*/
+#view-cart a, #search-button, #add-to-cart input, input#ekmResponseSignupButton, input#customer-login-button {
+    background:/*#8A94AA*/[ekm:colour_3][/ekm:colour_3] url(/ekmps/designs/assets/master/1129/images/button-shine-nw.png) bottom repeat-x;
+    }
+    
+#view-cart a:hover, #search-button:hover, #add-to-cart input:hover, input#ekmResponseSignupButton:hover, input#customer-login-button:hover {
+    background-color:/*#333*/[ekm:colour_4][/ekm:colour_4];
+    }
+
+/*header*/
+#header {overflow:hidden}
+#logo {float:left; width:620px; margin:20px 0;}
+
+/*mini-cart*/
+#mini-cart {float:right; height:30px; margin:20px 0; width: 359px;}
+#cart-inner {float:left; border:1px solid #F0F0F0; color:#666; font-size:11px; height:22px; margin:1px; padding:2px; width:220px; background:#fff; line-height:20px; position:relative}
+#mini-cart .all-cart-tems {float: right;}
+#items {margin-left:4px;}
+#total {color:#333; margin-left:5px;}
+#currency {float:right; margin-right:7px;}
+#currency-cont {background:#fefefe; left:5px; position:absolute; top:3px; height: 20px; min-width: 136px;}
+#currency-cont img {opacity:1.0; margin:2px 2px 0 0;  -moz-transition: all 0.2s ease-in-out 0s;}
+#currency-cont img:hover {opacity:0.7}
+.currency-active {color:#111;}
+#view-cart {float: left;}
+#view-cart a {height:28px; display:block; color:#fff; text-align:center; text-decoration:none; float:right; margin: 1px 1px 0 0; line-height: 26px; text-transform:lowercase; padding: 0 8px;}
+
+/*nav-bar*/
+#nav-bar {min-height:30px; margin-bottom: 20px;}
+
+#nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #F0F0F0;
+    width: 690px;
+    float: left;
+}
+#nav li {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    padding: 6px 0;
+}
+#nav li a {
+    text-decoration: none;
+    border-right: 1px solid [ekm:colour_7][/ekm:colour_7];
+    padding: 0 10px;
+    color: [ekm:colour_7][/ekm:colour_7];
+    text-transform: lowercase;
+    line-height: 17px;
+    font-size: 12px;
+}
+#nav li a:hover {text-decoration: underline;}
+
+.selected {color: #111;}
+
+input#ekmResponseEmailAddress, .customer-login-box {border:1px solid #F0F0F0; color:#666; font-size:11px; height:22px; margin:1px; padding: 2px 5px; width:160px; font-family:"Verdana", Arial, Helvetica, sans-serif; text-transform:lowercase}
+
+/*search*/
+.search {float: right; width: 290px; padding: 1px 0;}
+#search-box {
+    width: 198px;
+    float: right;
+    border: 1px solid #F0F0F0;
+    color: #666;
+    font-size: 11px;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 5px;
+    font-family: "Verdana", Arial, Helvetica, sans-serif;
+    text-transform: lowercase;
+}
+#search-button {
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 11px;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 10px;
+    text-transform: lowercase;
+    overflow: visible;
+    transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+}
+
+/*headers*/
+#categories-header, #specials-header  {color: #333; line-height: 27px; margin: 20px 0; min-height: 30px; padding-left: 8px; width:972px}
+
+/*layout*/
+.side-bar {width:180px; float:left;}
+#content {margin:0 9px; float:left; border: 1px solid /*#BBC3D3*/[ekm:colour_5][/ekm:colour_5]; overflow:hidden; background:#FFF; padding: 6px; width: 588px; min-height: 557px;}
+.element {width:178px; float:left; clear:both; border:1px solid /*#BBC3D3*/[ekm:colour_5][/ekm:colour_5]; margin-bottom: 10px; background:#fff; text-align:center}
+.element img {max-width:178px; padding-bottom:2px;}
+.element .ekm-edit-button-wrapper {float:left!important}
+.element-header {color: [ekm:colour_7][/ekm:colour_7];float: left;font-size: 11px;font-weight: bold;margin-bottom: 5px; padding: 4px; width:170px; background:/*#BBC3D3*/[ekm:colour_5][/ekm:colour_5]; text-align:left}
+.element form {float:left}
+
+/*product-filter*/
+.product-filter {width:168px; float:left; clear:both; border:1px solid /*#BBC3D3*/[ekm:colour_5][/ekm:colour_5]; margin-bottom: 10px; background:#fff; padding: 5px;}
+.side-header {color: [ekm:colour_7][/ekm:colour_7];float: left;font-size: 11px;font-weight: bold; padding: 4px; width:172px; background:/*#BBC3D3*/[ekm:colour_5][/ekm:colour_5]; text-align:left}
+.ekm-sortby {text-align: right;}
+#ekm-sortby-option {padding: 5px; border: 1px solid #F0F0F0; font-family: "Verdana", Arial, Helvetica, sans-serif; font-size: 11px; color: #666;}
+.side-bar form[name="product-filter"] .ui-slider-horizontal .ui-slider-handle {background: #8A94AA;}
+.side-bar  form[name="product-filter"] .ui-slider-horizontal .ui-slider-range {background: #BBC3D3;}
+
+/*category menu*/
+ul#category-menu {margin:0; padding:0;}
+ul#category-menu li {border-bottom:1px dotted #ccc; list-style:none; text-align:left;}
+ul#category-menu li a, ul#best-sellers li a {text-decoration: none; display: block; padding:4px;}
+ul#category-menu li:last-child, ul#best-sellers li:last-child {border-bottom:none!important;}
+ul#category-menu li a:hover, ul#best-sellers li:hover, li.active-cat a {
+    background:/*#EAECF1*/[ekm:colour_6][/ekm:colour_6];    
+    -moz-transition: all 0.2s ease-in-out 0s; 
+    -webkit-transition: all 0.2s ease-in-out 0s; 
+    cursor:pointer;
+    color:#111;
+    }
+ul#best-sellers {margin:0; padding:0;}
+ul#best-sellers li {border-bottom:1px dotted #ccc; list-style:none; text-align:left;}
+ul#best-sellers li a {width:100px;}
+.bs-p {float: right;position: relative;right: 4px;top: -17px; margin-bottom:-17px;}
+
+input#ekmResponseSignupButton, input#customer-login-button {
+    border:0; 
+    color: #FFF; 
+    cursor:pointer; 
+    display:block; 
+    font-family:"Trebuchet MS"; 
+    font-size:12px; 
+    line-height:19px;
+    padding:6px; 
+    text-align:center; 
+    -moz-transition: all 0.2s ease-in-out 0s; 
+    -webkit-transition: all 0.2s ease-in-out 0s; 
+    text-transform:lowercase!important;
+    padding: 5px 10px;
+    margin: -1px 1px;
+    }
+
+input#ekmResponseSignupButton {margin:0px 0px 3px 3px;}
+input#ekmResponseEmailAddress {margin:0px 0px 4px 1px;}
+
+/*footer*/
+#footer {margin:20px 0; padding:7px; color: [ekm:colour_7][/ekm:colour_7]; float:left; clear:both; width:966px;}
+#footer a {color: [ekm:colour_7][/ekm:colour_7]}
+#footer a:hover {opacity:0.7}
+#telephone {width:300px; float:right; text-align:right;}
+#footer-text {text-align:center; width:90%; margin:5px auto; clear:both;}
+
+#powered-by {margin:8px auto 20px auto; display:block; text-align: center;}
+
+/* ekm:toolbox */
+#ekmToolbox {position: fixed; left: 10px; top: 10px; background: #fff; width: 180px;border:1px solid /*#BBC3D3*/[ekm:colour_5][/ekm:colour_5]; font-size: 11px; color: #666; box-shadow: 0 0 1px #CCC; border-radius: 3px;}
+#ekmToolbox.hidden {opacity: 0.3;}
+#ekmToolbox label {display: block;}
+#ekmToolbox select {width: 170px;}
+#ekmToolbox input {width: 166px; padding: 0;}
+#ekmToolbox header {background:url(/ekmps/designs/assets/master/1129/images/close.png) 161px 4px no-repeat /*#BBC3D3*/[ekm:colour_5][/ekm:colour_5]; color: #fff; font-weight: bold; font-size: 13px; padding: 5px; border-radius: 2px 2px 0 0;}
+#ekmToolbox p  {padding: 5px;}
+#ekmToolbox form {display: block; padding: 5px; margin: 5px 0; padding: 5px; border-bottom: solid 1px #ccc;}
+#ekmToolbox form:last-child {border-bottom: 0 none;}
+#ekmToolbox header:hover {cursor:pointer; opacity:0.7}
+
+/*CART PAGE CSS---------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.ekm-cart-buttons {}
+.ekm-cart-buttons table, .ekm-cart-buttons td {background:none!important;}
+
+.ekm-cart-buttons a {text-decoration:none!important;}
+
+.ekm-cart-button-continue, .ekm-cart-button-update, .ekm-cart-button-checkout {
+    -moz-transition: all 0.2s ease-in-out 0s;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    color: #FFFFFF;
+    font-size: 11px;
+    line-height: 29px;
+    padding: 4px;
+    text-decoration: none !important;
+    text-transform: lowercase;
+    background:#666;
+    }
+.ekm-cart-button-checkout {background:[ekm:colour_3][/ekm:colour_3]}
+.ekm-cart-button-checkout:hover {background:[ekm:colour_5][/ekm:colour_5]}
+.ekm-cart-button-continue:hover, .ekm-cart-button-update:hover {background-color:#111!important}
+.ekm-cart-button-surround {background:none!important; background-color:none;}
+table.ekm-cart-button-surround {background:none!important}
+
+.social img {margin-right:3px;}
+.social img:hover {opacity:0.7;}
+ .hide {display:none!important}
+
+.customer-login { text-align: left }
+
+/* shop name logo default styling */
+.ekm-injected-logo { font-size: 30px; color: [ekm:colour_4][/ekm:colour_4]; text-transform: uppercase;  letter-spacing: -3px; margin-top: 20px; }
+.ekm-injected-logo a {text-decoration:none; color: [ekm:colour_4][/ekm:colour_4] }
+.ekm-injected-logo a:hover { color: [ekm:colour_3][/ekm:colour_3] }
+
+</style>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+<script>
+
+var $j = jQuery;
+
+
+
+$(document).ready(function(){
+    $j("#currency-cont").hide();
+    $j('#currency').click(function(){
+        $j('#currency').toggleClass('currency-active')
+        $j("#currency-cont").slideToggle();
+    });
+});
+
+
+
+function sameHeight(c, scope){
+    if (scope){
+        $j(scope).each(function(){
+            var set = $j(this).find(c);
+            sameHeight(set);
+        });
+    } else {
+        var h = 0;
+        $j(c).each(function(){
+            var th = $j(this).height()
+            h = (th > h)? th : h;
+        });
+        $j(c).height(h);
+    }
+}
+
+$j(window).bind('load', function(){
+    window.doSameHeight();
+});
+
+window.doSameHeight = function(){
+    sameHeight('.item-name', '.row');
+    sameHeight('.item-image', '.row');
+    sameHeight('.sh-img-div', '.row');
+    sameHeight('.short-description', '.row');
+    sameHeight('.sh-sd-div', '.row');
+}
+
+
+
+function centreImg(c){
+    $j(c).each(function(){
+        var imgHeight = $j(this).find('img').height();
+        var boxHeight = $j(this).height();
+        var padTop = Math.floor((boxHeight - imgHeight) / 2);
+        $j(this).find('img').css('marginTop', padTop);
+    });
+}
+
+$j(window).bind('load', function(){
+    centreImg('.item .item-image');
+});
+
+
+
+$j(document).ready(function(){
+    $j(".top").click(function(e){
+        e.preventDefault();
+        $("body,html").animate({scrollTop: 0},800);
+    });
+});
+
+</script>
+
+<!--[if IE 7]>
+<style>
+#currency {float: none; margin: 0 0 0 20px;}
+</style>
+<![endif]-->
+
+</head>
+
+
+
+<body>
+
+<script type="text/javascript">
+(function(a){a.cookie=function(b,c,d){if(arguments.length>1&&(!/Object/.test(Object.prototype.toString.call(c))||c===null||c===undefined)){d=a.extend({},d);if(c===null||c===undefined){d.expires=-1}if(typeof d.expires==="number"){var e=d.expires,f=d.expires=new Date;f.setDate(f.getDate()+e)}c=String(c);return document.cookie=[encodeURIComponent(b),"=",d.raw?c:encodeURIComponent(c),d.expires?"; expires="+d.expires.toUTCString():"",d.path?"; path="+d.path:"",d.domain?"; domain="+d.domain:"",d.secure?"; secure":""].join("")}d=c||{};var g=d.raw?function(a){return a}:decodeURIComponent;var h=document.cookie.split("; ");for(var i=0,j;j=h[i]&&h[i].split("=");i++){if(g(j[0])===b)return g(j[1]||"")}return null}})(jQuery);
+</script>
+
+[ekm:if]iftype='PRODUCT'; ifvalue='EKMPOWERSHOP_OR_EKMSITEBUILDER_WITH_CATALOGUE'; ifthen='
+[ekm:nested_if]iftype="ELEMENT_NOT_EMPTY";ifvalue="FAKE";ifthen="
+<div id="ekmToolbox" >
+    <section id="main-page-category">
+        <header>Template Toolbox</header>
+        <div class="section-cont">
+        <p>Choose a category that contain your best sellers.</p>
+        [ekm:nested_nested_showdata]
+            tag_editable=(no);
+            data=(categories);
+            location=(auto);
+            cols=(1);
+            rows=(1000);
+            font_formatting=(no);
+            output_start=(<form action="index.asp?function=EDITITEM&type=ELEMENT-UPDATE&elementreference=61000_best-sellers-category&location=&updatetype=UPDATE" method="post"><label>Choose A Category ?</label><select name="Element_Name" id="best-sellers-category"><option selected="selected" value="0">Select Category</option><option value="9999999999999">None</option>);
+            output_row_start=();
+            output_column_start=();
+            output_item=(<option value="[nested_nested_id]">[nested_nested_name-NOEDIT-NOLINK]</option>);
+            output_column_end=();
+            output_row_end=();
+            output_end=(</select></form>);
+        [/ekm:nested_nested_showdata]
+        <!--[ekm:element]elementreference='61000_best-sellers-category';edit_button='NO';[/ekm:element]-->
+        
+        <form action="index.asp?function=EDITITEM&type=ELEMENT-UPDATE&elementreference=61000_best-sellers-name&location=&updatetype=UPDATE" method="post">
+            <label>Choose A Name</label>
+            <input value="[ekm:elementname]elementreference='61000_best-sellers-name';[/ekm:elementname]" name="Element_Name"/>
+            <!--[ekm:element]elementreference='61000_best-sellers-name';edit_button='NO';[/ekm:element]-->
+        </form>
+        </div>
+    </section>
+</div><!-- #ekmToolbox -->
+<script type="text/javascript">
+    $j(function(){
+        $j("#ekmToolbox select, #ekmToolbox input").change(function(){ $j(this).parent('form').submit(); });
+        $j("#ekmToolbox header").click(function(){
+            $j("#ekmToolbox .section-cont").toggle();
+            $j("#ekmToolbox").toggleClass('hidden');
+            if($j.cookie('ekm_toolbox_hidden') == 'NO' || !$j.cookie('ekm_toolbox_hidden')) $j.cookie('ekm_toolbox_hidden', 'YES');
+            else $j.cookie('ekm_toolbox_hidden', 'NO');
+        });
+        
+        if($j.cookie('ekm_toolbox_hidden') == 'NO' || !$j.cookie('ekm_toolbox_hidden')) {
+            $j("#ekmToolbox .section-cont").show();
+            $j("#ekmToolbox").removeClass('hidden');
+        }
+        else {
+            $j("#ekmToolbox .section-cont").hide();
+            $j("#ekmToolbox").addClass('hidden');
+        }
+    });
+</script>
+";ifelse="";[/ekm:nested_if]
+'; ifelse='';[/ekm:if]
+
+<div id="container">
+    <div class="hide">
+        [ekm:element]
+            output_start='<div class="element"><div class="element-header">[element_name]</div>';
+            element_name_default='bs';
+            element_reference='bs'; 
+            product='ekmsitebuilder';
+            output_default='<style>.bs {display:none!important}</style>';
+            output_end='</div>';
+        [/ekm:element]
+    </div>
+
+    <div id="header">
+         [ekm:element]
+            output_start='<div id="logo">';
+            element_name_default='Logo';
+            element_reference='logo'; 
+            product='ekmpowershop, ekmsitebuilder';
+            output_default='<a href="index.asp"><img src="/ekmps/designs/assets/master/1129/[ekm:localisation][/ekm:localisation]/images/logo.png" /></a>';
+            output_end='</div>';
+        [/ekm:element]
+        
+        [ekm:minicart]  
+            'Basic Setup 
+            style='custom';
+            nocartmessage='';
+            maxcharacters='35';
+            ' Custom Style Layout 
+            output_start='
+            <div id="mini-cart" class="cf">
+                <div class="all-cart-tems cf">
+                    <div id="cart-inner" class="cf">
+            ';
+            
+            output_contents_start='';
+            output_contents_end='';
+            output_cart_contents=''; 
+            output_totals='
+                    <span id="items">items: [product_count]</span>
+                    <span id="total">total: [total]</span>
+                    <a href="#" id="currency">currency</a>
+                    <div id="currency-cont">[ekm:multicurrency]displaytype='flags';title='no';[/ekm:multicurrency]</div>
+            ';
+            output_end='
+                    </div>
+                    <!--cart-inner-->
+                    <div id="view-cart">[ekm:viewcart][/ekm:viewcart]</div>
+                </div>
+                <!--all-cart-items-->
+            </div>
+            <!--mini-cart-->
+            ';
+        [/ekm:minicart]
+    </div><!--#header-->
+    
+    <div id="nav-bar" class="cf">
+        [ekm:show_webpages]
+            orderby='auto';
+            counterstart='auto';
+            groups='auto';
+            counterreset='auto';
+            output_start='<ul id="nav"><li><a href="index.asp">home</a></li>';
+            output_item='<li>[link]</li>';
+            output_item_alternate='';
+            output_item_current='<li class="selected">[link]</li>';
+            output_item_blank='';
+            output_end='</ul><!--#nav-->';
+        [/ekm:show_webpages]
+
+        [ekm:searchbox]
+            show_search_term='yes';
+            search_parameters='productname, productcode, variant';
+
+            search_field_placeholder='search';
+            search_field_attributes='id="search-box";';
+            search_button_attributes='id="search-button";';
+
+            output_start='
+            <div class="search cf">
+            ';
+            layout='[search-button][search-field]';
+            output_end='
+            </div>
+            ';
+        [/ekm:searchbox]
+    </div><!--#nav-bar-->
+    
+    <div class="side-bar">
+        <div class="element">
+            [ekm:element]
+                output_start='<div class="element-header">';
+                element_name_default='category-180';
+                element_reference='category-180'; 
+                product='ekmpowershop, ekmsitebuilder';
+                output_default='Categories';
+                output_end='</div>';
+            [/ekm:element]
+            
+            [ekm:showdata]
+                tag_toggle_hide='yes';
+                data='categories';
+                location='0';
+                cols='1';
+                rows='999';
+                page_navigation='auto';
+                skiprecords='0';
+                excludelist='';
+                includelist='';
+                editbuttons='YES';
+                font_formatting='NO';
+                output_start='<ul id="category-menu">';
+                output_row_start='';
+                output_column_start='';
+                output_item='<li class="prod [ekm:nested_if]iftype="EQUALS";ifvalue="[id]";ifvalue2="[ekm:categoryid]depth='1';[/ekm:categoryid]";ifthen="active-cat";ifelse="";[/ekm:nested_if]">[name]</li>';
+                output_column_end='';
+                output_row_end='';
+                output_end='</ul>';
+                element_replace='null';
+            [/ekm:showdata]
+        </div>
+        
+        <div class="element bs">
+            <div class="element-header">[ekm:elementname]elementreference='61000_best-sellers-name';[/ekm:elementname]</div>
+            [ekm:showdata]
+                tag_editable='no';
+                data='products';
+                location='[ekm:elementname]elementreference='61000_best-sellers-category';[/ekm:elementname]';
+                cols='1';
+                rows='10';
+                skiprecords='0';
+                excludelist='';
+                includelist='';
+                page_navigation='no';
+                editbuttons='YES';
+                font_formatting='NO';
+                output_start='<ul id="best-sellers">';
+                    output_row_start='';
+                        output_column_start='';
+                            output_item='<li>[name]<span class="bs-p">[price]</span></li>';
+                        output_column_end='';
+                    output_row_end='';
+                output_end='</ul>';
+                element_replace='null';
+            [/ekm:showdata]
+        </div>
+        
+        [ekm:element]
+            output_start='<div class="element"><div class="element-header">[element_name]</div>';
+            element_name_default='Secure Online Shopping';
+            element_reference='promo-area-1-180'; 
+            product='ekmpowershop';
+            output_default='<img src="/ekmps/designs/assets/master/1129/images/cards.jpg" />';
+            output_end='</div>';
+        [/ekm:element]
+        
+        [ekm:element]
+            output_start='<div class="element"><div class="element-header">[element_name]</div>';
+            element_name_default='New Gallery Photos';
+            element_reference='promo-area-1-180'; 
+            product='ekmsitebuilder';
+            output_default='<img src="/ekmps/designs/assets/master/1129/images/sb-promo1.jpg" />';
+            output_end='</div>';
+        [/ekm:element]
+    </div>
+    
+    <div id="content">[ekm:content]</div>
+    
+    <div class="side-bar">
+
+    [ekm:filter_by]
+         target_tag_id='category-products'; <!-- add an id to the showdata to match this -->
+         output_start='<div class="side-header">Refine</div><div class="product-filter">';
+         output_end='</div> <!-- .product-filter -->';
+    [/ekm:filter_by]
+
+
+        [ekm:securearea_login]
+            style='style1';
+            textbox_style='" class="customer-login-box"';
+            login_button_style='" id="customer-login-button"';
+            forgotpass_link_pos='top" class="forgot"';
+            link_colour='[ekm:colour_3][/ekm:colour_3]';
+            output_start='<div class="element bg-col customer-login"><div class="element-header">Customer Login</div>';
+            output_end='</div>';
+        [/ekm:securearea_login]<!--customer-login-tag--> 
+
+        [ekm:newsletter]
+            style='1';
+            output_start='<div class="element"><div class="element-header">Email Newsletter</div>';
+            output_item='[email][signup_button]';
+            output_end='</div>';
+            textbox_attribute='';
+            email_textbox_attribute='value="enter email address" onfocus='if(this.value==this.defaultValue)this.value="";'  size="20"';
+            signupbutton_attribute='';
+            signupbutton_image='';
+        [/ekm:newsletter]<!--newsletter-tag-->
+
+        [ekm:element]
+            output_start='<div class="element"><div class="element-header">[element_name]</div>';
+            element_name_default='Artist of the Week';
+            element_reference='promo-area-2-180'; 
+            product='ekmpowershop, ekmsitebuilder';
+            output_default='<a href="#"><img alt="" src="/ekmps/designs/assets/master/1129/images/artist-week.jpg" style="width: 158px; height: 72px;" /></a><br />';
+            output_end='</div>';
+        [/ekm:element]
+              
+        [ekm:element]
+            output_start='<div class="element"><div class="element-header">[element_name]</div>';
+            element_name_default='New Brushes';
+            element_reference='promo-area-3-180'; 
+            product='ekmpowershop, ekmsitebuilder';
+            output_default='<a href="#"><img src="/ekmps/designs/assets/master/1129/images/brushes.jpg" style="width: 94px; height: 123px;" /></a><br />Now Stocking<br />Brushes';
+            output_end='</div>';
+        [/ekm:element]
+        
+        [ekm:element]
+            output_start='<div class="element"><div class="element-header">[element_name]</div>';
+            element_name_default='Delivery';
+            element_reference='promo-area-4-180'; 
+            product='ekmpowershop';
+            output_default='<img src="/ekmps/designs/assets/master/1129/images/delivery.jpg" style="width: 122px; height: 110px;" /><br />
+                            <strong>Free</strong> Delivery<br />';
+                            
+            output_end='</div>';
+        [/ekm:element]
+        
+        [ekm:element]
+            output_start='<div class="element last-element"><div class="element-header">[element_name]</div>';
+            element_name_default='Social Networking';
+            element_reference='promo-area-5-180'; 
+            product='ekmsitebuilder, ekmpowershop';
+            output_default='<p>You can follow us on:</p>
+            <div class="social">
+                <a href="http://www.facebook.com"><img border="0" height="25" src="/ekmps/designs/assets/master/1129/images/facebook.png" width="25" /></a> 
+                <a href="http://www.twitter.com"><img border="0" height="25" src="/ekmps/designs/assets/master/1129/images/twitter.png" width="25" /></a> 
+                <a href="http://www.flickr.com"><img border="0" height="25" src="/ekmps/designs/assets/master/1129/images/flickr.png" width="25" /></a> 
+                <a href="http://www.google.com/reader/view/#overview-page"><img border="0" height="25" src="/ekmps/designs/assets/master/1129/images/rss.png" width="25" /></a> 
+                <a href="http://www.google.com"><img border="0" height="25" src="/ekmps/designs/assets/master/1129/images/google.png" width="25" /></a>
+            </div>';
+            output_end='</div>';
+        [/ekm:element]
+        
+    </div>
+    
+    <div id="footer">
+        &copy; copyright [ekm:element]elementreference='footer-info';edit_button='YES';[/ekm:element]| <a href="sitemap.asp">sitemap</a> | <a href="terms.asp">terms &amp; conditions</a> | <a href="privacy.asp">privacy &amp; cookies</a> | <a href="#" class="top">top</a>
+        [ekm:element]
+            output_start='<div id="telephone">';
+            element_name_default='Telephone';
+            element_reference='telephone'; 
+            product='ekmpowershop, ekmsitebuilder';
+            output_default='telephone 9am - 5pm';
+            output_end='</div>';
+        [/ekm:element] 
+    </div><!--#footer-->
+    
+    <div id="footer-text">
+        [ekm:element]
+            element_reference='footer-text'; 
+            product='ekmsitebuilder, ekmpowershop';
+            output_default='<p style="text-align: center;">
+    Your custom text here and maybe some custom <a href="index.asp">links</a>. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>';
+        [/ekm:element]
+    </div><!--#footer-text-->
+    
+    <div id="powered-by">
+        [ekm:poweredby][/ekm:poweredby]
+    </div>
+</div><!--#container-->
+
+
+
+<style>
+
+/* ################# New cart page styles ################# */
+
+/* Cart Wrapper */
+.ekmpscart-wrapper a {
+    color: inherit;
+}
+
+/* Cart Header */
+.ekmpscart-header .ekmpscart-title {
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: #000;
+}
+
+
+
+/* Empty Cart Button */
+.ekmpscart-wrapper.ekmpscart-empty .ekmpscart-checkout-button.ekmpscart-checkout-button-continue {
+    background-color: [ekm:colour_3][/ekm:colour_3];
+}
+.ekmpscart-wrapper.ekmpscart-empty .ekmpscart-checkout-button.ekmpscart-checkout-button-continue:hover {
+    background-color: [ekm:colour_4][/ekm:colour_4];
+}
+
+
+/* Cart Content */
+.ekmpscart-contents {
+    border-color: #fff;
+}
+
+/* Cart Content Header */
+.ekmpscart-cart-items-column-header {
+    border-color: [ekm:colour_2][/ekm:colour_2];
+    background-color: [ekm:colour_2][/ekm:colour_2];
+    color: [ekm:colour_7][/ekm:colour_7];
+}
+
+
+
+/* Cart Product */
+.ekmpscart-cart-items .ekmpscart-cart-items-product {
+    border-color: [ekm:colour_5][/ekm:colour_5];
+}
+.ekmpscart-cart-items .ekmpscart-cart-items-product .ekmpscart-cart-items-product-name {
+    font-size: 15px;
+}
+.ekmpscart-cart-items .ekmpscart-cart-items-product .ekmpscart-cart-items-product-name a {
+    color: #666;
+}
+
+
+
+/* Remove Link */
+.ekmpscart-cart-items .ekmpscart-cart-items-product-action-remove {
+    color: #f00;
+    text-decoration: none;
+}
+
+
+
+/* Qty */
+.ekmpscart-cart-items .ekmpscart-cart-items-product .ekmpscart-cart-items-product-qty .ekmpscart-cart-items-product-qty-box {
+    border-color: [ekm:colour_5][/ekm:colour_5];
+}
+
+/* Qty update button */
+.ekmpscart-cart-items .ekmpscart-cart-items-product .ekmpscart-cart-items-product-qty .ekmpscart-cart-items-product-qty-update {
+  background-color: [ekm:colour_2][/ekm:colour_2];
+}
+.ekmpscart-cart-items .ekmpscart-cart-items-product .ekmpscart-cart-items-product-qty .ekmpscart-cart-items-product-qty-update:hover {
+  background-color: [ekm:colour_3][/ekm:colour_3];
+}
+
+
+
+/* Product Options */
+.ekmpscart-cart-items .ekmpscart-cart-items-product .ekmpscart-cart-items-product-options {
+    background-color: #fff;
+    border-color: [ekm:colour_5][/ekm:colour_5];
+}
+
+
+
+/* Discounts */
+.ekmpscart-cart-items .ekmpscart-order-discounts {
+    background-color: #fff;
+    border-color: [ekm:colour_5][/ekm:colour_5];
+}
+
+
+
+/* Estimate Delivery */
+.ekmpscart-estimate-delivery {
+    background-color: #fff;
+    border-color: [ekm:colour_5][/ekm:colour_5];
+}
+.ekmpscart-estimate-delivery .ekmpscart-estimate-delivery-header .ekmpscart-estimate-delivery-header-estimate-button,
+.ekmpscart-estimate-delivery .ekmpscart-estimate-delivery-content .ekmpscart-estimate-delivery-row-button .ekmpscart-estimate-delivery-row-button-estimate {
+  background-color: [ekm:colour_2][/ekm:colour_2];
+}
+.ekmpscart-estimate-delivery .ekmpscart-estimate-delivery-header .ekmpscart-estimate-delivery-header-estimate-button:hover,
+.ekmpscart-estimate-delivery .ekmpscart-estimate-delivery-content .ekmpscart-estimate-delivery-row-button .ekmpscart-estimate-delivery-row-button-estimate:hover {
+  background-color: [ekm:colour_3][/ekm:colour_3];
+}
+
+
+
+/* Total Row */
+.ekmpscart-totals .ekmpscart-total {
+    border-color: [ekm:colour_5][/ekm:colour_5];
+}
+
+/* Grand Total */
+.ekmpscart-totals .ekmpscart-total.ekmpscart-total-grand .ekmpscart-total-value {
+    color: [ekm:colour_2][/ekm:colour_2];
+}
+
+
+
+/* Cart Continue Button */
+.ekmpscart-checkout-button.ekmpscart-checkout-button-checkout.top-button {
+    margin-top: 0;
+    margin-bottom: 10px;
+    background-color: [ekm:colour_3][/ekm:colour_3];
+}
+.ekmpscart-checkout-button.ekmpscart-checkout-button-checkout {
+    background-color: [ekm:colour_3][/ekm:colour_3];
+}
+.ekmpscart-checkout-button.ekmpscart-checkout-button-checkout:hover,
+.ekmpscart-checkout-button.ekmpscart-checkout-button-checkout.top-button:hover {
+    background-color: [ekm:colour_4][/ekm:colour_4];
+}
+
+
+
+/* Continue Shopping Link */
+.ekmpscart-checkout-button.ekmpscart-checkout-button-continue a {
+    text-decoration: none;
+}
+
+/* ################# New cart page styles END ################# */
+
+</style>
+
+
+
+</body>
+
+</html>

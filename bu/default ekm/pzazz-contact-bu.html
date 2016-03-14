@@ -1,0 +1,45 @@
+<style type="text/css">/*CONTACT FORM*/
+.contact-form {font-size: 12px;}
+.contact-form h1 {font-size: 14px; margin: 10px 0px;}
+.contact-form p.required {color: red; font-weight: bold; font-size: 11px; margin: 0 0 0 20%}
+.contact-form .hr {border-bottom:1px dotted #CCC; height: 1px; margin: 10px 0px; }
+.contact-form-row {clear: both; overflow: hidden; margin: 5px;}
+.contact-form-row label {font-weight: bold; width: 20%; float: left; line-height: 38px;}
+.contact-form-row input, .contact-form-row textarea {padding:10px; border: 1px solid #CCC; box-shadow: 0px 0px 5px rgba(0,0,0,.1) inset; float:left; width: 60%; background: #EFEFEF}
+.contact-form-row textarea {height: 120px;} 
+.contact-form-row .star {color: red;}
+
+#contact-form-submit {background: none; border: none;}
+#contact-form-submit input {width: 80px!important; cursor: pointer; border: none; padding:10px; background: #000; color: #FFF; border: none; box-shadow: none; font-weight: 700; text-transform: uppercase; border-radius: 3px; margin-left: 20%;}
+#contact-form-submit input:hover {opacity: 0.7}
+#recaptcha_area {margin-left:20%;}
+</style>
+<div class="contact-form">
+<h1>Contact Us</h1>
+
+<div class="hr"></div>
+
+<p>If you have any questions please get in touch.</p>
+
+<p><strong>Phone:</strong> 01234 567891 (9.00am - 5.00pm)</p>
+
+<p><strong>Address:</strong> Misto Ltd, Commercial Road, Lancashire, BB3 0FG</p>
+
+<div class="hr"></div>
+
+<p>Alternatively, use this contact form and we will get back to you as soon as possible.</p>
+
+<p class="required"><span class="star">*</span>Required Field</p>
+
+<form action="index.asp?function=FORMMAIL" class="contact-form" method="POST">
+<div class="contact-form-row"><label for="name">Name: <span class="star">*</span></label><input name="Name" type="text" value="" /></div>
+
+<div class="contact-form-row"><label for="email">Email Address: <span class="star">*</span></label><input name="EmailAddress" type="text" value="" /></div>
+
+<div class="contact-form-row"><label for="message">Message:</label><textarea name="Message" type="text" value=""></textarea></div>
+
+<div class="contact-form-row">[ekm:captcha][/ekm:captcha]</div>
+
+<div class="contact-form-row" id="contact-form-submit"><input type="submit" value="Send" /></div>
+<!-- HIDDEN --><input name="fieldorder" type="hidden" value="[Name],[EmailAddress],[Message]" /> <input name="requiredfields" type="hidden" value="[Name],[EmailAddress]" /> <input name="subject" type="hidden" value="Email enquiry from your website" /></form>
+</div>

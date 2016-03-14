@@ -1,0 +1,335 @@
+<script src="/ekmps/designs/assets/master/1265/Other/tabcontent.js"></script>
+<script type="text/javascript">
+
+var $j = jQuery;
+
+$j(function(){
+	if ($j('.prod-name h1 span:contains("Parties")').length > 0) {
+	    $j("body").addClass("parties-prod-page");
+	}
+});
+
+</script>
+
+<style>
+@media only screen and (max-width: 800px) {
+	.responsive .content-wrapper { padding:0 10px; overflow:hidden; }
+	.responsive .category-product .sh-img-div .featured-product-image img {
+		width: 100%;
+    	height: 100%;
+	}
+}
+.content-wrapper {
+	padding:0 50px;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+</style>
+
+<div class="breadcrumbs">
+  <div class="breadcrumb-text">[ekm:location][/ekm:location]</div>
+  <div class="back">[ekm:back][/ekm:back]</div>
+</div><!--breadcrumb-->
+
+<div class="clearfix"></div>
+
+<div class="left-content-area">
+  <div class='prod-name'><h1>[ekm:productname]font_formatting='no';[/ekm:productname]</h1></div>
+  <div class='product-details'>[ekm:productstart][/ekm:productstart]
+
+    <div class="left-content-left-col cf">
+      <div class="main-image-container">
+        [ekm:productimage]
+          width='298';
+          height='auto';
+          opentype='popup';
+          images_layout='
+            <div class="main-image">[image_1]</div>
+            <div class="small-images cf">
+              [image_2][image_3][image_4]
+              <div class="small-image-5 cf">[image_5]</div>
+            </div><!-- CLOSE small-images -->';
+          extra_images_width='65';
+          extra_images_height='auto';
+        [/ekm:productimage]
+      </div><!--main-image-container-->
+    </div><!--left-content-left-col-->
+
+    <div class="left-content-right-col cf">
+      <div class="main-product-description">[ekm:productshortdescription]font_formatting='no';[/ekm:productshortdescription]</div><!--main-product-description-->
+      <div class="main-product-options">
+        <!--[ekm:productstock]
+          instock='<span class="in-stock">Stock Status :</span> <span class="stock-output">In Stock</span><br/>';
+          outstock='<span class="in-stock">Stock Status :</span> <span class="stock-output">Out of Stock</span><br/>';
+        [/ekm:productstock] CLOSE PRODUCT STOCK -->
+
+        [ekm:productcode]
+          show='yes';
+          htmlbefore='<span class="in-stock">Product Code : </span> ';
+          htmlafter='<br/>';
+        [/ekm:productcode]<!-- CLOSE PRODUCT CODE --> 
+
+        <!--[ekm:productbrand]
+          show='yes';
+          htmlbefore='<span class="in-stock">Product Brand : </span> ';
+          htmlafter='<br/>';
+        [/ekm:productbrand] CLOSE PRODUCT BRAND -->
+
+        <!--[ekm:productcondition]
+          show='yes';
+          htmlbefore='<span class="in-stock">Product Condition: &nbsp;</span> ';
+          htmlafter='<br/>';
+        [/ekm:productcondition] CLOSE PRODUCT CONDITIONS -->
+
+        [ekm:productattributes]
+          productid='';
+          output_start='<div class="product-attributes">';
+          output_item='<span class="in-stock">[name]: &nbsp;</span>[value]<br/>';
+          output_end='</div>';
+        [/ekm:productattributes] <!-- CLOSE CUSTOM ATTRIUTES -->
+
+      </div><!--main-product-options-->
+
+      <div class="main-product-dropdown-text">
+        [ekm:productoptions]
+          font_formatting='No';
+          orderby='name ASC';
+          text_box_template='[option_counter] - [template_option_title] - [template_option]';
+          dropdown_template_start='<strong>[template_option_title]</strong><div class="main-product-dropdown-container cf">';
+          dropdown_template_content='[template_option_item_start][template_option_item] [template_option_item_price_difference][template_option_item_end]';
+          dropdown_template_end='</div>';
+          item_id='[id]';
+          strip_script='YES';
+          text_item_action='[template_option_title] [maxlength] [option_counter]';
+          dropdown_action='[template_option_title] [option_counter]'; 
+        [/ekm:productoptions]
+      </div><!--main-product-dropdown-text-->
+
+      <div class="priceandrrp cf">
+        <div class="main-product-price">
+          [ekm:productprice]
+            font_formatting='no';
+            price_text_layout='<span class="">[price]</span>';
+            price_symbol_layout='auto';
+          [/ekm:productprice] </div>
+        <div class="main-product-rrp">
+          [ekm:productrrp]
+            line='yes';
+            font_formatting='no';
+            rrp_text_layout='<span class="">[rrp]</span>';
+            rrp_symbol_layout='auto';
+          [/ekm:productrrp]</div>
+      </div><!--priceandrrp-->
+
+      <div class="qty-atc cf">
+        <input name="p_qty" value="1" class="addtocart-qty">
+        <div class="main-add-to-cart">[ekm:addtocart][/ekm:addtocart]</div>
+      </div>
+
+      [ekm:backinstock]
+       output_start='<div id="back-in-stock"  class="product-email cf">';
+        instock='';
+        outstock='Email Me When Back In Stock';
+        requestmade='You will be emailed when this product is back in stock';
+        textbox_attribute='class="bis-box"';
+        button_attribute='';
+        link_text_attribute='';
+        output_end=' </div><!-- product-email --> ';
+      [/ekm:backinstock]
+
+      <!--<div class="product-social">
+        [ekm:social]
+          name='product page';
+          output_start='<div class="share-area cf">';
+          widget_start='<div class="share-image">';
+          widget_end='</div>';
+          output_end='</div>';
+        [/ekm:social] 
+       </div> product-socialL --> 
+
+      <!--[ekm:loyaltypoints]
+        output_start='<div class="loyalty-points">';
+        output_item='You will earn <b>[loyaltypoints]</b> points which is the equivalent of <b>[loyaltypoints-value]</b>';
+        output_end='</div> loyalty-points  ';
+      [/ekm:loyaltypoints]
+
+      [ekm:emailtofriend]
+        button='No';
+        linktext='<div class="send-to-friend">Send to a friend</div>';
+        message='I found this and thought of you.';
+        backgroundcolour='#FFFFFF';
+      [/ekm:emailtofriend]
+
+      <div class="print"><a href="javascript:window.print()">Print</a></div>-->
+            
+    </div><!--left-content-right-col-->
+
+    <div id="productTabs" class='cf'>
+      <ul id="countrytabs" class="shadetabs cf">
+        <li><a href="#" rel="country1" class="selected">Description</a></li>
+        [ekm:customerreviews]
+        show='auto';
+        editbuttonposition='right';
+        id='auto';
+        html_before='<li><a href="#" rel="country2">Review</a></li>';
+        html_review='';
+        html_no_reviews='';
+        html_after='';
+        limit='10';
+        orderby='date ASC';
+        [/ekm:customerreviews]
+      </ul>
+      <div id="tab-div">
+        <div id="country1" class="tabcontent"> [ekm:productdescription]font_formatting='no';[/ekm:productdescription] </div>
+        [ekm:customerreviews]
+          show='auto';
+          editbuttonposition='right';
+          id='auto';
+          html_before='
+            <div id="country2" class="tabcontent">
+            <div id="customer-reviews" style=""><p><a href="[url]">Write an online review</a> and share your thoughts with other shoppers!</p>';
+          html_review='<p>[reviewer]-[location]-[stars]</p><p>[review]</p>';
+          html_no_reviews='<p>Be the first to <a href="[url]">review this product</a></p>';
+          html_after='</div> <!-- #customer-reviews --></div> <!-- #country2 -->';
+          limit='10';
+        [/ekm:customerreviews]
+      </div>
+    </div><!--productTabs-->
+
+<script type="text/javascript">
+var countries=new ddtabcontent("countrytabs")
+countries.setpersist(true)
+countries.setselectedClassTarget("link") //"link" or "linkparent"
+countries.init()
+</script>
+
+    [ekm:productend][/ekm:productend]
+  </div><!--product-details-->
+
+  [ekm:showdata]
+  data='relatedproducts';
+  location='auto';
+  cols='3';
+  rows='99';
+  page_navigation='yes';
+  orderby='orderlocation, name';
+  editbuttons='YES';
+  counterreset='3';
+  image_ratio='218';
+  image_width='auto';
+  image_height='auto';
+  font_formatting='NO';
+  ' Output Format
+  header_title_text='Related Products';
+  output_start='
+
+    {header_title_text}
+      <div class="related-heading">[header_title_text]</div>
+    {/header_title_text}
+    {!header_title_text}
+    [ekm:element]
+      element_reference='Related Products';
+      edit_button='YES';
+      output_start='';
+      output_end='';
+      element_name_default='related-heading';
+      output_default='<div class="related-heading">Related Products</div>';
+    [/ekm:element]
+    {/!header_title_text}
+
+     <div class="featured-product-container"> ';
+  output_row_start='<div class="product-row cf">';
+  output_column_start='';
+    output_item='
+      <div class="category-product c-[counter]">
+        <div class="sh-img-div">{image}<div class="featured-product-image">[image]</div>{/image}</div>
+        <div class="details">
+          {name}<div class="featured-product-name">[name]</div>{/name}
+          <div class="sh-sd-div">{shortdescription}<div class="featured-product-desc">[shortdescription]</div>{/shortdescription}</div>
+          {price}
+            <div class="featured-product-price">
+              [price]
+              {rrp}<span class="featured-product-rrp">[rrp]</span>{/rrp}
+            </div>
+          {/price}
+        </div><!--CLOSE DETAILS -->
+        {add_to_cart_link}<div class="add-to-cart">[add_to_cart_link]</div><!---ADD_CART_BG-->{/add_to_cart_link}
+      </div><!--PRODUCT_CONTAINER-->
+    ';
+    output_column_end='';
+    output_row_end='</div><!--CLOSE ALL PRODUCTS -->';
+    output_end='</div><!--CLOSE FEATURED PRODUCT CONTAINER -->';
+  [/ekm:showdata]
+
+  </div><!--left-content-area-->
+
+  <div class="right-sidebar">
+
+  [ekm:showdata]
+    tag_hide_toggle='yes';
+    font_formatting='no';
+    ' Data to Show
+    data='categories';
+    location='0';
+    ' Basic Layout & Navigation
+    cols='1';
+    rows='100';
+    page_navigation='auto';
+    ' Advanced Data Manipulation
+    orderby='orderlocation, name';
+    skiprecords='0';
+    excludelist='';
+    includelist='';
+    ' Navigation Options when logged in
+    editbuttons='YES';
+    counterreset='';
+    ' Output Format
+      header_title_text='Category';
+      output_start='
+      <div class="right-sidebar-individual cf">
+      <div class="right-sidebar-heading">[header_title_text]</div>
+      <div class="cate-menu">
+      <ul>';
+    output_row_start='';
+    output_column_start='';
+    output_item='<li>[name]
+
+      [ekm:nested_if]
+        iftype="EQUALS";
+        ifvalue="[ekm:nested_categoryid]depth="0";[/ekm:nested_categoryid]";
+        ifvalue2="[id]";
+        ifthen="
+
+          [ekm:nested_showdata]
+            tag_hide_toggle="yes"; 
+            data="categories";
+            location="[id]";
+            cols="1";
+            rows="500";
+            page_navigation="no";
+            orderby="orderlocation, name";
+            font_formatting="No";
+            output_start="<ul>";
+            output_row_start="";
+            output_column_start="";
+            output_item="<li>[nested_name]</li>";
+            output_column_end="";
+            output_row_end="";
+            output_end="</ul>";
+            element_replace="null";
+          [/ekm:nested_showdata]";
+
+        ifelse="";
+      [/ekm:nested_if]
+    </li>';
+    output_column_end='';
+    output_row_end='';
+    output_end='</ul></div></div><!-- CLOSE CATEGORY MENU -->';
+    ' Element Replace
+    element_replace='null';
+  [/ekm:showdata]
+
+</div><!--right-sidebar-->
+
+<div class="clearfix"></div>

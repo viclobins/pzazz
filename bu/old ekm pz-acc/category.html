@@ -1,0 +1,99 @@
+	<FONT FACE="verdana" SIZE=2>[ekm:location][/ekm:location]</FONT>
+	<BR><BR>
+	[ekm:incategorydescription][/ekm:incategorydescription]
+	
+	<CENTER>
+		[ekm:showdata]
+			' the type of data to show
+				data='categories';
+				location='auto';
+				cols='2';
+				rows='5';
+				page_navigation='on'; ' on, off, auto
+			
+			' Used to set the image size - Set all to 'auto' for defaults
+				image_ratio='auto';
+				image_width='auto';
+				image_height='auto';		
+				
+			' Format for the categories and products, ie: do we want to use the same fonts sizes for both?
+			' Style: bold, italic, underlined, auto, 
+			
+				category_title_font='auto';
+				category_title_size='auto';	
+				category_title_style='auto';	
+				
+				category_description_font='auto';
+				category_description_size='auto';	
+				category_description_style='auto';				
+				
+				product_title_font='auto';
+				product_title_size='auto';	
+				product_title_style='auto';	
+				
+				product_description_font='auto';
+				product_description_size='auto';	
+				product_description_style='auto';												
+				
+		
+			' The output format										
+				output_start='<TABLE BORDER=0 CELLSPACING=5 WIDTH=100% >';
+				
+					output_row_start='<TR>';
+					
+						output_column_start='<TD WIDTH=50% >';
+						
+							output_item='<TABLE BORDER=0 CELLPADDING=3><TR><TD WIDTH=10>[image]</TD><TD>[name]<br />[description]</TD></TR></TABLE>';
+							
+						output_column_end='</TD>';
+					
+					output_row_end='</TR>';
+				
+				output_end='</TABLE>';														
+		[/ekm:showdata]
+
+	</CENTER>
+	
+	<BR>
+	
+	
+																
+		
+		[ekm:showdata]
+			' the type of data to show
+				data='products';
+				location='auto';
+				cols='1';
+				rows='20';
+				page_navigation='on'; ' on, off, auto
+			
+			' Used to set the image size - Set all to 'auto' for defaults
+				image_ratio='auto';
+				image_width='auto';
+				image_height='auto';		
+				
+			' Format for the categories and products, ie: do we want to use the same fonts sizes for both?
+			' Style: bold, italic, underlined, auto, 
+			
+				
+				element_replace='&nbsp;';											
+				
+		
+			' The output format										
+				output_start='<TABLE BORDER=0 CELLSPACING=10 CELLPADDING=0 WIDTH="100%">';
+				
+					output_row_start='<TR><TD>';
+					
+						output_column_start='<TABLE BORDER=0 WIDTH="100%" BGCOLOR="[ekm:colour_category_2]" CELLPADDING="5"><TR><TD BGCOLOR="[ekm:colour_category_1]">';
+						
+							output_item='<TABLE BORDER=0 WIDTH="100%"><TR><FORM NAME="buy" METHOD="POST" ACTION="index.asp?function=CART&mode=ADD&productid=[id]"><TD WIDTH="100" VALIGN=TOP ALIGN="LEFT">[image]</TD><TD>[name]<BR>[shortdescription]</TD><TD WIDTH="100" ALIGN="RIGHT"><TABLE BORDER=0 WIDTH="100%"><TR><TD ALIGN="RIGHT">Price:&nbsp;<FONT COLOR="#990000">[price]</FONT></TD></TR><TR><TD ALIGN="RIGHT"><TABLE BORDER=0><TR><TD><INPUT TYPE="text" NAME="p_qty" SIZE=3 VALUE="1"></TD><TD><INPUT TYPE="submit" VALUE="Buy"></TD></TR></TABLE></TD></TR></TABLE></TD></FORM></TR></TABLE>';
+							
+						output_column_end='</TD></TR></TABLE>';
+					
+					output_row_end='</TD></TR>';
+				
+				output_end='</TABLE>';														
+		[/ekm:showdata]
+
+	<BR>
+	<FONT FACE="verdana" SIZE=2><B>[ekm:back][/ekm:back]</B></FONT>

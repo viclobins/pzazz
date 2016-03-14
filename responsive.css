@@ -1,0 +1,621 @@
+@media only screen and (max-width: 479px) {
+    
+	/*HEADER*/
+	.responsive .header-socket span, .responsive .header-socket a.email { display:block; }
+	.responsive .header-socket .tel { margin:10px 0; }
+	.responsive .header-socket .follow-us { margin: 6px 10px 10px; }
+	.responsive .header-socket .searchbox { width:165px; margin: 20px auto; }
+	.responsive .header-socket .searchbox .ekmps-search-field { width:165px; }
+	
+	
+	/*BANNERS*/
+	.responsive .home-page .main-header { height:460px; }
+	.responsive .home-banner {
+		top: 196px;
+		height: 245px;
+	}
+	.responsive .home-banner .quote {
+		font-size: 24px;
+		width: 222px;
+		height: 182px;
+		bottom: 30px;
+		left: -7px;
+		padding: 44px 21px 0 42px;
+	}
+	.responsive .about-banner .quote {
+		font-size: 24px;
+		width: 155px;
+		height: 142px;
+		bottom: -7px;
+		left: -10px;
+		padding: 41px 21px 0 35px;
+	}
+	.responsive .parents-banner .quote {
+		font-size: 24px;
+		width: 283px;
+		height: 133px;
+		bottom: -7px;
+		left: 13px;
+		padding: 36px 21px 0 35px;
+	}
+	.responsive .schools-banner .quote, .responsive .join-banner .quote {
+		font-size: 32px;
+		width: 189px;
+		height: 157px;
+		bottom: -7px;
+		padding: 32px 0 0 58px;
+	}
+	.responsive .schools-banner .quote { left: 10px; }
+	.responsive .join-banner .quote { left:150px; }
+	.responsive .home-banner .quote span, .responsive .about-banner .quote span, .responsive .parents-banner .quote span { font-size:11px; }
+	.responsive .img-banner { height:245px; overflow:hidden; }
+	.responsive .community-banner .quote {
+		font-size: 27px;
+		width: 235px;
+		height: 192px;
+		bottom: 6px;
+		left: -20px;
+		padding: 57px 0 0 50px;
+	}
+	.responsive .community-banner .quote span { font-size:14px; }
+	.responsive .content .quote3.sub-title {
+		width: 300px;
+		padding: 16px 13px 30px;
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+	.responsive .quote3.sub-title span { font-size: 11px; }
+	
+	
+	/*CONTENT*/
+	.responsive .section-title { font-size:45px; }
+	.responsive .white-copy-bold, .responsive .white-list li { font-size:15px; }
+	.responsive .find-school a { padding: 23px 35px 31px; }
+	.responsive .clubs-sessions a { padding: 22px 26px; }
+	.responsive .two-col.side-padding { padding:0 20px; }
+	.responsive .image-links { margin:20px auto; }
+	.responsive .img-btn span { font-size:14px; }
+	
+	.responsive .buttons-bar { padding:20px 0 40px; }
+	.responsive ul.buttons li { font-size:30px; margin:15px; }
+	.responsive ul.buttons li span { font-size: 60px; }
+	.responsive ul.buttons li.care-community a {
+		padding: 18px 32px 24px;
+		font-size: 48px;
+		background-size: cover;
+	}
+	
+	.responsive .quote1.sub-title, .responsive .quote2.sub-title {
+		font-size: 20px;
+		margin: 30px auto;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+	}
+	.responsive .quote1.sub-title { width:320px; padding:13px 0px 9px 21px; }
+	.responsive .quote2.sub-title span { font-size:10px; }
+	.responsive .quote2.sub-title {
+		width: 320px;
+		padding: 17px 0px 13px 0px;
+	}
+	.responsive a.book-cta {
+		width: 264px;
+		font-size: 26px;
+		padding: 20px 31px;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	.responsive a.book-cta:after {
+		width: 67px;
+    	height: 27px;
+		top: 64px;
+		right: -20px;
+	}
+	.responsive .sub-title { font-size:28px; line-height:1; }
+	
+	.responsive .clubs-title { padding: 8px 28px; }
+	.responsive.clubs-page-single .white-copy-bold { margin:25px; }
+	.responsive .clubs-img {
+		float:none;
+		width:85%;
+		margin:0 auto;
+	}
+	.responsive .cta-btn {
+		font-size:43px;
+		padding:22px 38px 1px 49px;
+	}
+	.responsive .cta-btn:after {
+		width: 68px;
+		height: 26px;
+		top: 45px;
+		right: -38px;
+	}
+	
+	
+	/*CLUBS*/
+	.responsive.clubs-page .white-copy-bold { margin:25px; }
+	.responsive a.clubs { width: 100%; }
+	.responsive a.clubs span { font-size:32px; }
+	.responsive a.clubs.act span:after { width: 63px; height: 49px; margin-left: 10px; }
+	.responsive a.clubs.perform span:after { width: 74px; height: 67px; margin-left: -5px; }
+	.responsive a.clubs.create span:after { width: 60px; height: 48px; margin-left: 10px; }
+	.responsive a.clubs.recorder span:after { width: 25px; height: 71px; margin-left: 10px; }
+	.responsive a.clubs.dance span:after { width: 68px; height: 52px; margin-left: 15px; }
+	.responsive a.clubs.sing span:after { width: 55px; height: 47px; margin-left: 15px; }
+	.responsive a.clubs.gold span:after { width: 65px; height: 49px; margin-left: 13px; }
+	.responsive a.clubs.ukelele span:after { width: 56px; height: 65px; margin-left: 12px; }
+	.responsive a.clubs.anti-bully span:after {
+		width: 55px;
+		height: 55px;
+		top: 21px;
+		right: -5px;
+	}
+	.responsive a.clubs.inset span:after {
+		width: 52px;
+		height: 39px;
+		right: -7px;
+	}
+	
+	.responsive .join-cta { font-size:29px; }
+	.responsive .join-cta.leader span { padding:56px 0; }
+	.responsive .join-cta.franchisee span { padding: 41px 0; }
+	
+	
+	/*TESTIMONIALS*/
+	.responsive #testimonials {
+		height: 250px;
+		margin: 30px 0 0;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	.responsive #test_container {
+		width: 100%;
+		margin: 85px auto 0;
+	}
+	.responsive #testimonials .testimonial { width: 100%; }
+	.responsive #testimonials .testimonial_text { font-size: 21px; }
+	.responsive #testimonials .testimonial.long .testimonial_text { font-size: 14px; }
+	.responsive #testimonials .testimonial_name { font-size: 12px; }
+	.responsive #testimonials .testimonial.long .testimonial_name { font-size:8px; }
+	
+	.responsive .join-wrapper #test_container { margin-top:50px; }
+	.responsive .join-wrapper #testimonials .testimonial_text { font-size:13px; }
+	
+	
+	/*CONTACT*/
+	.responsive .contact-form { margin:20px 0; }
+	.responsive .contact-form .frm-row { height: auto; margin-bottom: 5px; }
+	.responsive .contact-form label, .responsive .contact-form .label { font-size: 15px; margin-bottom:3px; }
+	.responsive .contact-form .txt, .contact-form .txtarea { width:100%; }
+	.responsive .contact-form .txt { height:30px; }
+	.responsive #frm-row-submit { width: 100%; float: none; }
+	.responsive #frm-row-submit .bt {
+		font-size: 45px;
+		margin-top: 7px;
+    	margin-left: 20px;
+	}
+	.responsive #frm-row-date label { width:100%; }
+	.responsive .contact-details { padding:20px; }
+	.responsive .contact-details h3 { font-size:30px; }
+	.responsive .contact-details h3.ireland { margin-top:30px; }
+	.responsive .contact-details span, .responsive .contact-details a.email { font-size:14px; }
+	.responsive .contact-details .address:before, .responsive .contact-details .tel:before, .responsive .contact-details .email:before { width: 27px; height: 28px; }
+	.responsive .contact-details .address:before { background-position: -53px -35px; background-size: 80px; }
+	.responsive .contact-details .tel:before { background-position: 1px -36px; background-size: 80px; }
+	.responsive .contact-details .email:before { background-position: -26px -36px; background-size: 80px; }
+	
+	
+	/*PARTIES*/
+	.responsive .parties-shape { width:296px; font-size:50px; }
+	.responsive a.parties-shape { font-size: 47px; }
+	.responsive.parties-page #testimonials .testimonial.first .testimonial_text { font-size:18px; }
+	.responsive .parties-img {
+		float: none;
+		width: 60%;
+		margin: 0 auto;
+	}
+	.responsive .contact-form.parties-form {
+		width: 100%;
+		padding: 10px 20px;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	.responsive #frm-row-gender { margin: 50px 0 15px !important; }
+	.responsive #frm-row-gender .label, .responsive #frm-row-age label { width:70px; }
+	.responsive #frm-row-age { margin-top:50px; }
+	.responsive #datepicker { width:120px; }
+	.responsive #timepicker { width:90px; }
+	.responsive #frm-row-where label, .responsive #frm-row-message label { width:100%; margin-top:20px; }
+	.responsive .frm-row.book:after { right:-10px; }
+
+	
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    
+	/*HEADER*/
+	.responsive .header-socket span, .responsive .header-socket a.email { margin-top: 10px; }
+	
+	
+	/*BANNERS*/
+	.responsive.home-page .main-header { height:597px; }
+	.responsive .home-banner {
+		top: 200px;
+		height: 376px;
+	}
+	.responsive .home-banner .quote {
+		bottom: 10px;
+		left: -10px;
+		right: auto;
+	}
+	.responsive .about-banner .quote {
+		font-size: 34px;
+		width: 235px;
+		height: 188px;
+		bottom: 7px;
+		right: -35px;
+		padding: 49px 21px 0 55px;
+	}
+	.responsive .parents-banner .quote {
+		font-size: 30px;
+		width: 337px;
+		height: 153px;
+		bottom: -2px;
+		left: -5px;
+		padding: 36px 21px 0 35px;
+	}
+	.responsive .schools-banner .quote, .responsive .join-banner .quote {
+		font-size: 32px;
+		width: 189px;
+		height: 157px;
+		bottom: -7px;
+		padding: 32px 0 0 58px;
+	}
+	.responsive .schools-banner .quote { left: 10px; }
+	.responsive .join-banner .quote { left:0px; }
+	.responsive .about-banner .quote span, .responsive .parents-banner .quote span { font-size:15px; }
+	.responsive .img-banner { height:245px; overflow:hidden; }
+	.responsive .community-banner .quote {
+		font-size: 32px;
+		width: 295px;
+		height: 218px;
+		bottom: 6px;
+		left: -40px;
+		padding: 62px 0 0 68px;
+	}
+	.responsive .community-banner .quote span { font-size:18px; }
+	.responsive .content .quote3.sub-title {
+		width: 400px;
+		padding: 28px 43px 30px;
+		font-size: 27px;
+	}
+	.responsive .quote3.sub-title span { font-size: 16px; }
+	
+	
+	/*CONTENT*/
+	.responsive .atoz-wrapper .two-col { float:left; width:50%; }
+	.responsive .two-col.side-padding { padding:0 50px; }
+	.responsive.about-page .find-school, .responsive.about-page .join-us { margin:27px 10px; }
+	
+	.responsive .quote1.sub-title, .responsive .quote2.sub-title {
+		font-size: 30px;
+		margin: 30px auto;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+	}
+	.responsive .quote1.sub-title { width:480px; padding:13px 0px 9px 21px; }
+	.responsive .quote2.sub-title span { font-size:16px; }
+	.responsive .quote2.sub-title {
+		width: 480px;
+		padding: 17px 0px 13px 0px;
+	}
+	.responsive a.book-cta {
+		width: 373px;
+		font-size: 40px;
+		padding: 28px 31px;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	.responsive a.book-cta:after {
+		top: 69px;
+    	right: -40px;
+	}
+	
+	.responsive .join-cta { font-size:43px; }
+	.responsive .join-cta.leader span { padding:72px 0; }
+	.responsive .join-cta.franchisee span { padding: 45px 0; }
+	
+	
+	/*CLUBS*/
+	.responsive.clubs-page .white-copy-bold { margin:25px 50px; }
+	.responsive a.clubs { width: 100%; }
+	.responsive a.clubs span { font-size:55px; }
+	.responsive a.clubs.anti-bully span:after {
+		width: 67px;
+		height: 67px;
+		top: 56px;
+		right: -3px;
+	}
+	
+	.responsive.clubs-page-single .white-copy-bold { margin:25px; }
+	.responsive .clubs-img {
+		float: none;
+		width: 75%;
+		max-width:430px;
+		margin: 0 auto;
+	}
+	
+	
+	/*TESTIMONIALS*/
+	.responsive #testimonials {
+		margin: 30px 0 0;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	.responsive #test_container {
+		width: 100%;
+		margin: 85px auto 0;
+	}
+	.responsive #testimonials .testimonial { width: 100%; }
+	.responsive #testimonials .testimonial_text { font-size: 31px; }
+	.responsive #testimonials .testimonial.long .testimonial_text { font-size: 21px; }
+	.responsive #testimonials .testimonial_name { font-size: 15px; }
+	.responsive #testimonials .testimonial.long .testimonial_name { font-size:13px; }
+	
+	.responsive .join-wrapper #test_container { margin-top:68px; }
+	.responsive .join-wrapper #testimonials .testimonial_text { font-size:20px; }
+	.responsive .join-wrapper #testimonials .testimonial_name { font-size:18px; }
+	
+	.responsive.parties-page #testimonials .testimonial.first .testimonial_text { font-size:31px; }
+	
+	
+	/*PARTIES*/
+	.responsive .parties-img { width: 180px; }
+	.responsive .contact-form.parties-form { width:auto; }
+	.responsive .contact-form .frm-row { height:auto; }
+	.responsive .contact-form label, .responsive .contact-form .label { display:block; }
+	.responsive .contact-form .txt, .responsive .contact-form .txtarea { float:none; }
+	.responsive .contact-form.parties-form label.male, .responsive .contact-form.parties-form label.female { width:38px; }
+	.responsive .contact-form.parties-form label, .responsive .contact-form.parties-form .label {
+		width:100%;
+		margin-bottom:4px;
+	}
+	.responsive .contact-form.parties-form #frm-row-submit { float:left; margin:0; }
+	
+	
+	/*CONTACT*/
+	.responsive.contact-page #frm-row-submit { float:none; }
+	.responsive .two-col.contact-details { padding:25px; }
+	
+	
+}
+
+@media only screen and (max-width: 767px) {
+	
+	
+	/*HEADER*/
+	.responsive .header-socket .details-slide { display:block; }
+	.responsive .header-socket .uk-office, .responsive .header-socket .ireland-office, .responsive .header-socket .follow-us, .responsive .header-socket .searchbox { display:none; }
+	.responsive .header-socket div { margin-right:10px; }
+	
+	.responsive .breadcrumbs { margin-left:10px; }
+	.responsive .logo, .responsive .mini-cart { float:none; }
+	.responsive .logo img { margin:0 auto; }
+	.responsive .mini-cart { text-align:center; }
+	.responsive .nav {
+		max-height: 0;
+		max-width:320px;
+		margin:0 auto;
+    	overflow: hidden;
+		-webkit-transition:0.2s;
+		-moz-transition:0.2s;
+		transition:0.2s;
+	}
+	.responsive .nav.active { max-height:500px; }
+	.responsive .nav li {
+		margin:0;
+		display:block;
+		background: #c8348c;
+		border-top:1px solid #6e3093;
+		padding: 4px 10px;
+	}
+	.responsive .nav .book-now { border-bottom: 1px solid #6e3093; }
+	.responsive .nav li a { color:#fff; }
+	.responsive .nav li.book-now a {
+		background:none;
+		padding:0;
+	}
+	.responsive .nav li.about a.about:after { display:none; }
+	.responsive .nav-bar { float:none; }
+	.responsive .mobile-menu, .responsive .mobile-extra { display:block !important; }
+	.responsive .mobile-extra {
+		font-size: 18px;
+    	padding-left: 20px !important;
+	}
+	.responsive .sub-nav { display:none !important; }
+	
+	
+	/*CONTENT*/
+	.responsive .content { width:100%; overflow:hidden; }
+	.responsive .three-col, .responsive .two-col {
+		float:none;
+		width:100%;
+	}
+	
+	
+	/*FOOTER*/
+	.responsive #footer .widget {
+		float: none;
+    	width: 100%;
+		height: auto;
+		padding:1px;
+	}
+	.responsive .widget.book-box { padding-bottom:20px !important; }
+	.responsive .widget.contact-box { padding-top:20px !important; padding-bottom: 20px !important; }
+	.responsive .book-box h2 {
+		font-size:46px;
+		margin:10px 0;
+	}
+	.responsive .book-box img { margin: 45px auto; }
+	.responsive .tweet-inner { margin:30px auto; }
+	.responsive .contact-box h3, .responsive .contact-box span, .responsive .contact-box a.email { padding-left:20px !important; }
+	.responsive .footer-socket { padding:18px 5px; }
+	.responsive .footer-socket ul {
+		float: none;
+		text-align: center;
+		line-height: 1.9;
+		margin-bottom: 10px;
+	}
+	.responsive .footer-socket p {
+		float:none;
+		text-align:center;
+	}
+	
+}
+
+@media only screen and (min-width: 768px) and (max-width: 949px) {
+	
+	/*HEADER*/
+	.responsive .header-socket .details-slide { display:block; }
+	.responsive .header-socket .uk-office, .responsive .header-socket .ireland-office, .responsive .header-socket .follow-us, .responsive .header-socket .searchbox { display:none; }
+	.responsive .header-socket div { margin-right:10px; }
+	
+	.responsive .mini-cart {
+		width: 387px;
+    	text-align: right;
+	}
+	.responsive .breadcrumbs { margin-left:10px; }
+	.responsive.home-page .nav-bar { margin:5px 0; }
+	.responsive .nav { width: 420px; }
+	.responsive .nav li.book-now { margin-top:10px; }
+	
+	
+	/*BANNER*/
+	.responsive .home-banner .quote {
+		bottom: 20px;
+    	left: 0px;
+		right:auto;
+	}
+	.responsive .about-banner .quote { bottom:10px; right:-10px; }
+	.responsive .parents-banner .quote {
+		font-size: 42px;
+		width: 481px;
+		height: 218px;
+		bottom: -5px;
+		left:0;
+		right: auto;
+		padding: 55px 0 0 57px;
+	}
+	.responsive .parents-banner .quote span { font-size:20px; }
+	.responsive .schools-banner .quote { left:10px; }
+	.responsive .join-banner .quote { left:0; }
+	.responsive .community-banner .quote { left:0; }
+	
+	
+	/*CONTENT*/
+	.responsive .content { width:100%; }
+	
+	.responsive.about-page .find-school, .responsive.about-page .join-us { margin:27px 50px; }
+	
+	.responsive .img-btn span { font-size:12px; }
+	
+	.responsive .clubs-page .white-copy-bold { padding:25px 100px; }
+	.responsive a.clubs span { font-size:40px; }
+	.responsive a.clubs.recorder span:after { width: 42px; height: 118px; }
+	.responsive a.clubs.anti-bully span:after {
+		width: 64px;
+		height: 65px;
+		top: 33px;
+		right: -6px;
+	}
+	
+	.responsive.clubs-page-single .white-copy-bold { margin:25px; }
+	.responsive .clubs-img {
+		width: 80%;
+		margin-right: 30px;
+		margin-top: 60px;
+	}
+	.responsive .cta-btn { margin: -8px 58px 0; }
+	
+	.responsive .join-cta { font-size:36px; }
+	.responsive .join-cta.franchisee span { padding: 54px 0; }
+	
+	
+	/*FOOTER*/
+	.responsive #footer .widget { width:50%; }
+	.responsive #footer .widget.book-box {
+		width:100%;
+		height:430px;
+		padding:1px;
+		float:none;
+	}
+	.responsive .tweet-box { padding:45px 0; }
+	.responsive .contact-box { padding:0 25px; }
+	
+}
+
+@media only screen and (min-width: 950px) and (max-width: 1209px) {
+	
+	.responsive.home-page .nav-bar { margin: 17px 0; }
+	.responsive .nav-bar { margin-bottom: 15px; }
+	.responsive .nav { width: 630px; }
+	.responsive .nav li.book-now { margin-top:10px; }
+	.responsive .mini-cart { width:570px; text-align:right; }
+	
+	.responsive .home-banner .quote { right:0; }
+	.responsive .about-banner .quote { right:40px; }
+	.responsive .parents-banner .quote {
+		font-size: 50px;
+		width: 565px;
+		height: 271px;
+		bottom: 30px;
+		right: 0px;
+	}
+	.responsive .community-banner .quote { left:0; }
+	
+	.responsive .content { width:100%; }
+	
+	.responsive .img-btn span { font-size: 15px; }
+	
+	.responsive .clubs-page .white-copy-bold { padding:25px 130px; }
+	.responsive a.clubs span { font-size:50px; }
+	.responsive a.clubs.anti-bully span:after { top:45px; }
+	
+	.responsive .join-cta { font-size:43px; max-height:187px; }
+	.responsive .join-cta.franchisee span { padding: 51px 0; }
+	
+	.responsive .tweet-box { padding:45px 15px; }
+	.responsive .contact-box { padding:0 0.32%; }
+	
+}
+
+@media only screen and (min-width: 950px) and (max-width: 963px) {
+	.responsive.about-page .find-school, .responsive.about-page .join-us { margin:27px 10px; }
+}
+
+
+/* iPad */
+@media only screen
+and (device-width: 768px)
+and (device-height: 1024px)
+and (orientation : portrait)
+and (-webkit-device-pixel-ratio: 1) {
+}
+@media only screen
+and (device-width: 768px)
+and (device-height: 1024px)
+and (orientation : portrait) {
+}
+
+/* mobile */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 667px) 
+and (orientation : landscape) {
+}

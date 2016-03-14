@@ -1,0 +1,46 @@
+<script type="text/javascript">
+
+var $j = jQuery;
+
+$j(function(){
+  $j('body').addClass('about-page');
+});
+
+</script>
+<div class="contact-banner img-banner"></div>
+
+<div class="contact-wrapper">
+<div class="two-col side-padding">
+<h2 class="sub-title">Get in touch with us</h2>
+
+<form action="index.asp?function=FORMMAIL" class="contact-form" method="post">
+<div class="frm-row" id="frm-row-name"><label for="Name">Name:</label> <input class="txt" name="Name" type="text" /></div>
+
+<div class="frm-row" id="frm-row-email"><label for="Email">Email:</label> <input class="txt" name="Email" type="text" /></div>
+
+<div class="frm-row" id="frm-row-message"><label for="Message">Message:</label><textarea class="txtarea" name="Message"></textarea></div>
+
+<div class="frm-row" id="frm-row-submit"><input class="bt" type="submit" value="Send" /></div>
+
+<div class="clearfix"></div>
+</form>
+</div>
+
+<div class="two-col contact-details">[ekm:element]
+    element_reference='cup-uk';
+    edit_button='YES';
+    output_start='<h3 class="uk">[element_name]</h3>';
+    output_end='';
+    element_name_default='UK Head office';
+    output_default='<span class="address">The Barn, Watford House Lane, Watford, Herts, WD17 1BJ</span> <span class="tel">0333 200 3334</span> <a class="email" href="mailto:friendlyteam@p-zazz.co.uk">friendlyteam@p-zazz.co.uk</a>';
+[/ekm:element] [ekm:element]
+    element_reference='cup-ireland';
+    edit_button='YES';
+    output_start='<h3 class="ireland">[element_name]</h3>';
+    output_end='';
+    element_name_default='Ireland office';
+    output_default='<span class="address">Shanlis Cross, Shanlis, Ardee, Louth</span> <span class="tel">01 6917279</span> <a class="email" href="mailto:friendlyteam@p-zazz.eu">friendlyteam@p-zazz.eu</a>';
+[/ekm:element]</div>
+
+<div class="clearfix"></div>
+</div>
