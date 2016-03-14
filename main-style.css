@@ -190,8 +190,8 @@ p, h1, h2, h3, h4, h5, a, span, font, ul, li {
     margin-top: -2px;
     margin-right: 7px;
 }
-.header-socket .tel:before { background:url(http://www.creative-genesis.com/pzazz/img/icons-social.png) no-repeat 0 0; background-size:108px; }
-.header-socket .email:before { background:url(http://www.creative-genesis.com/pzazz/img/icons-social.png) no-repeat -27px 0; background-size:108px; }
+.header-socket .tel:before { background:url(img/icons-social.png) no-repeat 0 0; background-size:108px; }
+.header-socket .email:before { background:url(img/icons-social.png) no-repeat -27px 0; background-size:108px; }
 
 .header-socket .follow-us a {
 	font-size:0px;
@@ -202,12 +202,12 @@ p, h1, h2, h3, h4, h5, a, span, font, ul, li {
     vertical-align: middle;
 }
 .header-socket .follow-us .twitter {
-	background:url(http://www.creative-genesis.com/pzazz/img/icons-social.png) no-repeat -55px 0;
+	background:url(img/icons-social.png) no-repeat -55px 0;
 	background-size:108px;
     margin: 0 2px 0 8px;
 }
 .header-socket .follow-us .fb {
-	background:url(http://www.creative-genesis.com/pzazz/img/icons-social.png) no-repeat -82px 0;
+	background:url(img/icons-social.png) no-repeat -82px 0;
 	background-size:108px;
 }
 
@@ -253,10 +253,10 @@ p, h1, h2, h3, h4, h5, a, span, font, ul, li {
 	display:inline-block;
 	width:19px; height:13px;
 	margin-left:8px;
-	background:url(http://www.creative-genesis.com/pzazz/img/icons-arrows.png) no-repeat -19px 0;
+	background:url(img/icons-arrows.png) no-repeat -19px 0;
 	vertical-align:middle;
 }
-.header-socket .details-slide.active:after { background:url(http://www.creative-genesis.com/pzazz/img/icons-arrows.png) no-repeat 0 0; }
+.header-socket .details-slide.active:after { background:url(img/icons-arrows.png) no-repeat 0 0; }
 
 
 .home-page .main-header {
@@ -290,7 +290,7 @@ p, h1, h2, h3, h4, h5, a, span, font, ul, li {
 .mini-cart .items:before {
 	content:"";
 	display:inline-block;
-	background:url(http://www.creative-genesis.com/pzazz/img/icon-cart.png) no-repeat 0 0;
+	background:url(img/icon-cart.png) no-repeat 0 0;
 	width:23px; height:23px;
 	vertical-align: bottom;
     margin-right: 10px;
@@ -316,7 +316,7 @@ p, h1, h2, h3, h4, h5, a, span, font, ul, li {
 .nav li.about a.about:after {
 	content:"";
 	display:inline-block;
-	background:url(http://www.creative-genesis.com/pzazz/img/red-arrow.png) no-repeat 0 0;
+	background:url(img/red-arrow.png) no-repeat 0 0;
 	margin-left:5px;
 	width:13px; height:9px;
 	vertical-align:middle;
@@ -328,7 +328,7 @@ p, h1, h2, h3, h4, h5, a, span, font, ul, li {
 .nav li.contact a { color:#84b81a; }
 .nav li.book-now a {
 	color:#ffe114;
-	background:url(http://www.creative-genesis.com/pzazz/img/shape-book-now.png) no-repeat 0 0;
+	background:url(img/shape-book-now.png) no-repeat 0 0;
 	background-size: contain;
     padding: 6px 9px;
 }
@@ -364,7 +364,7 @@ p, h1, h2, h3, h4, h5, a, span, font, ul, li {
     padding: 4px 10px;
 	margin:0 auto;
 	cursor:pointer;
-	background:url(http://www.creative-genesis.com/pzazz/img/icon-menu.png) #c8348c no-repeat;
+	background:url(img/icon-menu.png) #c8348c no-repeat;
 	background-position:right 10px center;
 }
 .mobile-extra { display:none !important; }
@@ -378,7 +378,7 @@ p, h1, h2, h3, h4, h5, a, span, font, ul, li {
 	z-index:1;
 	width:100%;
 	height:466px;
-	background:url(http://www.creative-genesis.com/pzazz/img/banner-home.jpg) no-repeat 0 0;
+	background:url(img/banner-home.jpg) no-repeat 0 0;
 	background-size:cover;
 }
 
@@ -391,7 +391,7 @@ p, h1, h2, h3, h4, h5, a, span, font, ul, li {
 	position:absolute;
 	width:334px; height:305px;
 	bottom:30px; right:90px;
-	background:url(http://www.creative-genesis.com/pzazz/img/shape-quote.png) no-repeat 0 0;
+	background:url(img/shape-quote.png) no-repeat 0 0;
 	background-size:cover;
 	padding: 64px 21px 0 49px;
 	-webkit-box-sizing: border-box;
@@ -429,17 +429,17 @@ ul.buttons li a {
 }
 ul.buttons li span { font-size:75px; }
 
-.for-parents a { background:url(http://www.creative-genesis.com/pzazz/img/shape-parents.png) no-repeat 0 0; padding:18px 40px 31px 31px; }
+.for-parents a { background:url(img/shape-parents.png) no-repeat 0 0; padding:18px 40px 31px 31px; }
 .for-parents a, .for-parents span { color:#ffe114; }
 
-.for-schools a { background:url(http://www.creative-genesis.com/pzazz/img/shape-schools.png) no-repeat 0 0; padding: 18px 35px 31px 36px; }
+.for-schools a { background:url(img/shape-schools.png) no-repeat 0 0; padding: 18px 35px 31px 36px; }
 .for-schools a, .for-schools span { color:#d71c46; }
 
-.for-kids a { background:url(http://www.creative-genesis.com/pzazz/img/shape-kids.png) no-repeat 0 0; padding:18px 74px 31px 68px; }
+.for-kids a { background:url(img/shape-kids.png) no-repeat 0 0; padding:18px 74px 31px 68px; }
 .for-kids a, .for-kids span { color:#30277d; }
 
 ul.buttons li.care-community a {
-	background:url(http://www.creative-genesis.com/pzazz/img/shape-community.png) no-repeat 0 0;
+	background:url(img/shape-community.png) no-repeat 0 0;
 	padding:24px 40px 33px;
 	font-size:60px;
 }
@@ -461,7 +461,7 @@ ul.buttons li.care-community a {
 	letter-spacing:normal;
 }
 
-.about-banner { background:url(http://www.creative-genesis.com/pzazz/img/banner-about.jpg) no-repeat center; }
+.about-banner { background:url(img/banner-about.jpg) no-repeat center; }
 .about-banner .quote {
 	font-family: 'single_sleeveregular';
 	font-size:57px;
@@ -471,7 +471,7 @@ ul.buttons li.care-community a {
 	position:absolute;
 	width:334px; height:305px;
 	bottom:18px; right:80px;
-	background:url(http://www.creative-genesis.com/pzazz/img/shape-quote2.png) no-repeat 0 0;
+	background:url(img/shape-quote2.png) no-repeat 0 0;
 	background-size:cover;
 	padding: 78px 28px 0 58px;
 	-webkit-box-sizing: border-box;
@@ -493,25 +493,25 @@ ul.buttons li.care-community a {
 }
 .join-us a {
 	color:#d1388a;
-	background:url(http://www.creative-genesis.com/pzazz/img/shape-join.png) no-repeat 0 0;
+	background:url(img/shape-join.png) no-repeat 0 0;
 	padding: 27px 68px;
 }
 .about-page .join-us { margin:27px 0; }
 .find-school a {
 	color:#6e3093;
-	background:url(http://www.creative-genesis.com/pzazz/img/shape-find.png) no-repeat 0 0;
+	background:url(img/shape-find.png) no-repeat 0 0;
 	padding: 32px 32px 39px;
 }
 .about-page .find-school { margin:27px 70px; }
 .clubs-sessions a {
 	color:#ffe114;
-	background:url(http://www.creative-genesis.com/pzazz/img/shape-clubs.png) no-repeat 0 0;
+	background:url(img/shape-clubs.png) no-repeat 0 0;
 	padding:33px 30px;
 }
 .about-page .clubs-sessions { margin:27px 0; }
 
 #testimonials {
-	background:url(http://www.creative-genesis.com/pzazz/img/bg-testimonials.jpg) no-repeat center;
+	background:url(img/bg-testimonials.jpg) no-repeat center;
 	background-size:cover;
 	width:100%; height:300px;
 	margin:0; padding:1px;
@@ -582,7 +582,7 @@ ul.buttons li.care-community a {
 	position:absolute;
 	width: 357px; height: 288px;
     bottom: 26px; left: 40px;
-	background:url(http://www.creative-genesis.com/pzazz/img/shape-quote3.png) no-repeat 0 0;
+	background:url(img/shape-quote3.png) no-repeat 0 0;
 	background-size:cover;
 	padding: 83px 0 0 68px;
 	-webkit-box-sizing: border-box;
@@ -745,7 +745,7 @@ a.clubs.inset span:after {
 	font-size:58px;
 	font-weight:normal;
 	color:#fff;
-	background:url(http://www.creative-genesis.com/pzazz/img/clubs/shape-act.png) no-repeat 0 0;
+	background:url(img/clubs/shape-act.png) no-repeat 0 0;
 	background-size:contain;
 	width: 250px;
     padding: 15px 53px;
@@ -759,7 +759,7 @@ a.clubs.inset span:after {
 	vertical-align:middle;
 }
 .clubs-title.act:after {
-	background:url(http://www.creative-genesis.com/pzazz/img/clubs/icon-act.png) no-repeat 0 0;
+	background:url(img/clubs/icon-act.png) no-repeat 0 0;
 	width: 83px; height: 67px;
 	margin-left: 20px;
 }
@@ -772,7 +772,7 @@ a.clubs.inset span:after {
 	font-size:58px;
 	font-weight:normal;
 	color:#d1388a;
-	background:url(http://www.creative-genesis.com/pzazz/img/shape-cta.png) no-repeat 0 0;
+	background:url(img/shape-cta.png) no-repeat 0 0;
 	background-size:contain;
 	width: 126px;
     padding: 24px 38px 0 58px;
@@ -783,7 +783,7 @@ a.clubs.inset span:after {
 	position:absolute;
 	background-size:100% !important;
 	display:block;
-	background:url(http://www.creative-genesis.com/pzazz/img/click-here.png) no-repeat 0 0;
+	background:url(img/click-here.png) no-repeat 0 0;
 	width:88px; height:36px;
 	top: 37px; right: -100px;
 }
@@ -791,7 +791,7 @@ a.clubs.inset span:after {
 
 /* PARTIES */
 
-.parties-banner { background:url(http://www.creative-genesis.com/pzazz/img/banner-parties.jpg) no-repeat center; }
+.parties-banner { background:url(img/banner-parties.jpg) no-repeat center; }
 
 .parties-shape {
 	display:block;
@@ -799,7 +799,7 @@ a.clubs.inset span:after {
 	letter-spacing: 0.01em;
 	font-size:71px;
 	color:#ffe114;
-	background:url(http://www.creative-genesis.com/pzazz/img/shape-parties.png) no-repeat 0 0;
+	background:url(img/shape-parties.png) no-repeat 0 0;
 	background-size:cover !important;
 	width: 361px;
     padding: 26px 71px;
@@ -808,7 +808,7 @@ a.clubs.inset span:after {
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
 }
-a.parties-shape { background:url(http://www.creative-genesis.com/pzazz/img/shape-parties-book.png) no-repeat 0 0; padding:29px 85px; margin:0 auto 30px; }
+a.parties-shape { background:url(img/shape-parties-book.png) no-repeat 0 0; padding:29px 85px; margin:0 auto 30px; }
 .parties-page #testimonials { margin: 40px 0; }
 .parties-page #testimonials .testimonial.first .testimonial_text { font-size:35px; }
 .parties-page .white-copy-bold { line-height:1.6; }
@@ -827,7 +827,7 @@ a.parties-shape { background:url(http://www.creative-genesis.com/pzazz/img/shape
 }
 .contact-form.parties-form #frm-row-gender { margin-bottom:25px; }
 .contact-form.parties-form #frm-row-gender * { display:inline-block; vertical-align:middle; }
-.contact-form.parties-form label.male { background:url(http://www.creative-genesis.com/pzazz/img/icons-gender.png) no-repeat 0 0; }
+.contact-form.parties-form label.male { background:url(img/icons-gender.png) no-repeat 0 0; }
 .contact-form.parties-form #frm-row-gender input {
 	visibility:hidden;
 	position: absolute;
@@ -844,9 +844,9 @@ a.parties-shape { background:url(http://www.creative-genesis.com/pzazz/img/shape
     border-radius: 3px;
 }
 .contact-form.parties-form #frm-row-gender input[type="checkbox"]:checked + label:after {
-	background:url(http://www.creative-genesis.com/pzazz/img/icon-tick.png) no-repeat 0 0;
+	background:url(img/icon-tick.png) no-repeat 0 0;
 }
-.contact-form.parties-form label.female { background:url(http://www.creative-genesis.com/pzazz/img/icons-gender.png) no-repeat -38px 0; margin-left:70px; }
+.contact-form.parties-form label.female { background:url(img/icons-gender.png) no-repeat -38px 0; margin-left:70px; }
 select.age {
 	background:#fff url(img/icon-select.png) no-repeat right 6px center;
 	width: 70px;
@@ -864,7 +864,7 @@ select.age {
 	position:absolute;
 	width:88px; height:36px;
 	top: 44px; right: 30px;
-	background:url(http://www.creative-genesis.com/pzazz/img/click-here.png) no-repeat 0 0;
+	background:url(img/click-here.png) no-repeat 0 0;
 }
 #datepicker {
 	font-size: 15px;
@@ -885,7 +885,7 @@ select.age {
 
 /* CONTACT */
 
-.contact-banner { background:url(http://www.creative-genesis.com/pzazz/img/banner-contact.jpg) no-repeat center; }
+.contact-banner { background:url(img/banner-contact.jpg) no-repeat center; }
 
 .contact-details h3 {
 	font-family: 'single_sleeveregular';
@@ -934,7 +934,7 @@ select.age {
     text-align: center;
 }
 #frm-row-submit .bt {
-	background:url(http://www.creative-genesis.com/pzazz/img/shape-send.png) no-repeat 0 0;
+	background:url(img/shape-send.png) no-repeat 0 0;
 	background-size:cover;
 	font-family: 'single_sleeveregular';
 	letter-spacing: 0.01em;
@@ -964,13 +964,13 @@ select.age {
     margin-top: -2px;
     margin-right: 7px;
 }
-.contact-details .address:before { background:url(http://www.creative-genesis.com/pzazz/img/icons-social.png) no-repeat -71px -49px; background-size:107px; }
-.contact-details .tel:before { background:url(http://www.creative-genesis.com/pzazz/img/icons-social.png) no-repeat 0 -49px; background-size:107px; }
-.contact-details .email:before { background:url(http://www.creative-genesis.com/pzazz/img/icons-social.png) no-repeat -36px -49px; background-size:107px; }
+.contact-details .address:before { background:url(img/icons-social.png) no-repeat -71px -49px; background-size:107px; }
+.contact-details .tel:before { background:url(img/icons-social.png) no-repeat 0 -49px; background-size:107px; }
+.contact-details .email:before { background:url(img/icons-social.png) no-repeat -36px -49px; background-size:107px; }
 
 
 /* FOR KIDS */
-.kids-banner { background:url(http://www.creative-genesis.com/pzazz/img/banner-kids.jpg) no-repeat center; }
+.kids-banner { background:url(img/banner-kids.jpg) no-repeat center; }
 
 .content .sub-title { margin:0 25px; }
 
@@ -1009,7 +1009,7 @@ select.age {
 }
 
 /* FOR SCHOOLS */
-.schools-banner { background:url(http://www.creative-genesis.com/pzazz/img/banner-schools.jpg) no-repeat center; }
+.schools-banner { background:url(img/banner-schools.jpg) no-repeat center; }
 .schools-banner .quote {
 	font-family: 'single_sleeveregular';
 	font-size:57px;
@@ -1019,7 +1019,7 @@ select.age {
 	position:absolute;
 	width: 322px; height: 268px;
     bottom: 35px; left:80px;
-	background:url(http://www.creative-genesis.com/pzazz/img/shape-quote3.png) no-repeat 0 0;
+	background:url(img/shape-quote3.png) no-repeat 0 0;
 	background-size:cover;
 	padding: 48px 0 0 98px;
 	-webkit-box-sizing: border-box;
@@ -1031,8 +1031,8 @@ select.age {
 #testimonials .testimonial.long .testimonial_name { font-size:17px; }
 
 /* FOR PARENTS */
-.parents-banner { background:url(http://www.creative-genesis.com/pzazz/img/banner-parents.jpg) no-repeat center; }
-.parents-banner2 { height:300px; background:url(http://www.creative-genesis.com/pzazz/img/banner-parents2.jpg) no-repeat center; }
+.parents-banner { background:url(img/banner-parents.jpg) no-repeat center; }
+.parents-banner2 { height:300px; background:url(img/banner-parents2.jpg) no-repeat center; }
 .parents-banner .quote {
 	font-family: 'single_sleeveregular';
 	font-size:57px;
@@ -1042,7 +1042,7 @@ select.age {
 	position:absolute;
 	width: 635px; height: 291px;
     bottom: 25px; right: 60px;
-	background:url(http://www.creative-genesis.com/pzazz/img/shape-forparents.png) no-repeat 0 0;
+	background:url(img/shape-forparents.png) no-repeat 0 0;
 	background-size:cover;
 	padding: 68px 0 0 66px;
 	-webkit-box-sizing: border-box;
@@ -1059,8 +1059,8 @@ select.age {
 	font-size:38px;
 	margin: 45px auto;
 }
-.quote1.sub-title { width: 580px; padding: 38px 55px 34px 125px; background:url(http://www.creative-genesis.com/pzazz/img/shape-quote4.png) no-repeat 0 0; }
-.quote2.sub-title { width: 620px; padding: 38px 87px 24px 66px; background:url(http://www.creative-genesis.com/pzazz/img/shape-quote5.png) no-repeat 0 0; text-align:center; }
+.quote1.sub-title { width: 580px; padding: 38px 55px 34px 125px; background:url(img/shape-quote4.png) no-repeat 0 0; }
+.quote2.sub-title { width: 620px; padding: 38px 87px 24px 66px; background:url(img/shape-quote5.png) no-repeat 0 0; text-align:center; }
 .quote2.sub-title span {
 	font-family:Helvetica, Arial, sans-serif;
 	color:#3d96ce;
@@ -1072,7 +1072,7 @@ a.book-cta {
 	position:relative;
 	display:block;
 	width:460px;
-	background:url(http://www.creative-genesis.com/pzazz/img/shape-book-club.png) no-repeat 0 0;
+	background:url(img/shape-book-club.png) no-repeat 0 0;
 	background-size:contain;
 	font-family: 'single_sleeveregular';
 	font-size:58px;
@@ -1097,7 +1097,7 @@ a.book-cta:after {
 
 /* JOIN US */
 
-.join-banner { background:url(http://www.creative-genesis.com/pzazz/img/banner-join.jpg) no-repeat center; }
+.join-banner { background:url(img/banner-join.jpg) no-repeat center; }
 .join-banner .quote {
 	font-family: 'single_sleeveregular';
 	font-size:57px;
@@ -1107,7 +1107,7 @@ a.book-cta:after {
 	position:absolute;
 	width: 322px; height: 268px;
     bottom: 35px; left:80px;
-	background:url(http://www.creative-genesis.com/pzazz/img/shape-quote3.png) no-repeat 0 0;
+	background:url(img/shape-quote3.png) no-repeat 0 0;
 	background-size:cover;
 	padding: 48px 0 0 98px;
 	-webkit-box-sizing: border-box;
@@ -1145,8 +1145,8 @@ a.book-cta:after {
 	background-size:64px !important;
 	z-index:999;
 }
-.join-cta.leader.active:before { background:url(http://www.creative-genesis.com/pzazz/img/join-triangles.png) no-repeat -33px 0; }
-.join-cta.franchisee.active:before { background:url(http://www.creative-genesis.com/pzazz/img/join-triangles.png) no-repeat 0 0; }
+.join-cta.leader.active:before { background:url(img/join-triangles.png) no-repeat -33px 0; }
+.join-cta.franchisee.active:before { background:url(img/join-triangles.png) no-repeat 0 0; }
 .join-wrapper .two-col { margin-top:0; }
 
 .content.leader, .content-wide.franchisee {
@@ -1191,23 +1191,23 @@ a.contact-links:before {
 }
 a.contact-links.calendar:before {
 	width:31px; height:35px;
-	background:url(http://www.creative-genesis.com/pzazz/img/icons-contact.png) no-repeat 0 0;
+	background:url(img/icons-contact.png) no-repeat 0 0;
 }
 a.contact-links.read:before {
 	width:35px; height:35px;
-	background:url(http://www.creative-genesis.com/pzazz/img/icons-contact.png) no-repeat -35px 0;
+	background:url(img/icons-contact.png) no-repeat -35px 0;
 }
 a.contact-links.video:before {
 	width:35px; height:24px;
-	background:url(http://www.creative-genesis.com/pzazz/img/icons-contact.png) no-repeat -74px 0;
+	background:url(img/icons-contact.png) no-repeat -74px 0;
 }
 a.contact-links.skype:before {
 	width:35px; height:35px;
-	background:url(http://www.creative-genesis.com/pzazz/img/icons-contact.png) no-repeat -113px 0;
+	background:url(img/icons-contact.png) no-repeat -113px 0;
 }
 
 .join-wrapper #testimonials {
-	background:url(http://www.creative-genesis.com/pzazz/img/bg-testimonials2.jpg) no-repeat center;
+	background:url(img/bg-testimonials2.jpg) no-repeat center;
 	background-size:cover;
 	height:355px;
 }
@@ -1233,7 +1233,7 @@ a.contact-links.skype:before {
 
 /* FIND SCHOOL */
 
-.find-banner { height:245px; background:url(http://www.creative-genesis.com/pzazz/img/banner-find.jpg) no-repeat center; }
+.find-banner { height:245px; background:url(img/banner-find.jpg) no-repeat center; }
 
 a.atoz {
     float: left;
@@ -1349,7 +1349,7 @@ a.atoz:hover:before {
     height: 60px;
     top: 0;
     left: 0;
-	background:url(http://www.creative-genesis.com/pzazz/img/icon-twitter.png) #06a1f1 no-repeat center;
+	background:url(img/icon-twitter.png) #06a1f1 no-repeat center;
 }
 
 #tweecool li {
@@ -1402,7 +1402,7 @@ a.atoz:hover:before {
 	font-weight:normal;
 	color:#d1388a;
     letter-spacing: 0.7px;
-	background:url(http://www.creative-genesis.com/pzazz/img/shape-contact.png) no-repeat 0 0;
+	background:url(img/shape-contact.png) no-repeat 0 0;
 	background-size:contain;
 	padding: 20px 41px;
 	margin: 20px auto 30px;
@@ -1432,8 +1432,8 @@ a.atoz:hover:before {
     margin-top: -2px;
     margin-right: 7px;
 }
-.contact-box .tel:before { background:url(http://www.creative-genesis.com/pzazz/img/icons-social.png) no-repeat 0 -24px; background-size:108px; }
-.contact-box .email:before { background:url(http://www.creative-genesis.com/pzazz/img/icons-social.png) no-repeat -27px -24px; background-size:108px; }
+.contact-box .tel:before { background:url(img/icons-social.png) no-repeat 0 -24px; background-size:108px; }
+.contact-box .email:before { background:url(img/icons-social.png) no-repeat -27px -24px; background-size:108px; }
 ul.logos {
 	text-align:center;
 	list-style:none;
